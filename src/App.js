@@ -5,6 +5,7 @@ import altrest from './images/altrest.png';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         </Route>
 
       </Switch>
+      <Footer/>
     </div>
   );
 }

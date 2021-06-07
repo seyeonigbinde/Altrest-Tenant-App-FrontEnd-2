@@ -1,6 +1,7 @@
 import React from 'react';
 import top_img_1 from '../images/top_img_1.jpeg'
 import * as Icon from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
 
 
 const Home = ()=> {
@@ -22,7 +23,7 @@ const Home = ()=> {
               <img src={top_img_1} alt="top_image"/>
           </div>
           <div className="services_items"> 
-            <h2>Lanlords</h2>
+            <h2>Landlords</h2>
               <br/><br/>
                 <ul class="list-group list-group-flush text-start">
                     <li class="list-group-item p-3"> <Icon.Check2Square /> Manage Maintenance Request</li>
@@ -31,7 +32,7 @@ const Home = ()=> {
                     <li class="list-group-item p-3"><Icon.Check2Square /> Rental Agreements</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Notices</li>
                 </ul>
-              <button className=" btn btn-primary">Get Started</button>
+             <Link><button className=" btn btn-primary">Get Started</button></Link> 
           </div>
         </section>
         <section className="middlepage">
@@ -43,7 +44,7 @@ const Home = ()=> {
                     <li class="list-group-item p-3"><Icon.Check2Square /> Online Payments</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Rental Agreements & E-sign</li>
                 </ul>
-              <button className=" btn btn-primary">Get Started</button>
+                <Link>  <button className=" btn btn-primary">Get Started</button></Link> 
           </div>
           <div className="top_image">
               <img src={top_img_1} alt="top_image"/>
@@ -63,7 +64,7 @@ const Home = ()=> {
                     <li class="list-group-item p-3"><Icon.Check2Square /> Violation Reports</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Community Announcements </li>
                 </ul>
-              <button className=" btn btn-primary">Get Started</button>
+                <Link> <button className=" btn btn-primary">Get Started</button></Link> 
           </div>
         </section>
         <section className="middlepage">
@@ -77,7 +78,7 @@ const Home = ()=> {
                     <li class="list-group-item p-3"><Icon.Check2Square /> Stay Organized with Calendar</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Build Business Profile</li>
                 </ul>
-              <button className=" btn btn-primary">Get Started</button>
+                <Link> <button className=" btn btn-primary">Get Started</button></Link> 
           </div>
           <div className="top_image">
               <img src={top_img_1} alt="top_image"/>

@@ -102,10 +102,11 @@ header{
 .middlepage{
   background-color: #fff;
   width:100%;
-  padding: 12% 4%;
+  padding: 10% 4% 2%;
   display: flex;
   justify-content: space-between;
   color: #4f4f4f;
+  align-items: center;
 }
 .services_items{
   width: 40%;
@@ -135,4 +136,36 @@ button{
   padding: 8px 15px;
   margin-top: 16px;
   cursor: pointer;
+}
+.footer_body{
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  line-height: 2;
+  color: #4f4f4f;
+  text-align: center;
+
+}
+.footer_links{
+  padding: 0 7%;
+}
+.footer_links a{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+  color: #4f4f4f;
+  font-size: 0.9rem;
+}
+footer p{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+.footer_social{
+  display: flex;
+  justify-content: space-evenly;
+  width: 10%;
 }
