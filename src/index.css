@@ -1,13 +1,138 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+/* 	border: 0; */
+	}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+background-color: #fff;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.5;
+color: #4f4f4f;
 }
-
+*{
+  box-sizing: border-box; 
+   max-width:100%; 
+   border: 1px solid red; 
+  margin: 0 auto;
+ 
+}
+h1{
+  font-size: 2.8rem;
+}
+h2{
+  font-size: 2.0rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+p{
+  font-size: 1.2rem;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0%;
+}
+.logo{
+  width: 9%;
+  padding: 0% 2%;
+
+}
+.links{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links a{
+  text-decoration: none;
+  color: #4f4f4f;
+}
+.login{
+  width: 20%;
+  padding: 0 4%;
+  display: flex;
+  align-items: center;
+}
+.login a{
+  text-decoration: none;
+  color: #4f4f4f;
+}
+.signup_login{
+  color: #aaa;
+  font-size: .9rem;
+}
+.homepage{
+  background-color: #185adb;
+  width:100%;
+  padding: 12% 4%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+}
+.top_image{
+  width:40%;
+  padding: 2% 2%;
+}
+.top_image img{
+ border-radius: 10px;
+}
+.top_content{
+  width: 45%;
+}
+.top_content h1{
+  font-size: 3.2rem;
+}
+.middlepage{
+  background-color: #fff;
+  width:100%;
+  padding: 12% 4%;
+  display: flex;
+  justify-content: space-between;
+  color: #4f4f4f;
+}
+.services_items{
+  width: 40%;
+}
+.form_section {
+  border: 2px solid #81b214;
+  padding: 0.25em;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+label{
+  float: left;
+	width: 8em;
+	text-align: left;
+  align-items: center;
+  padding-top: 4%;
+	padding-right: 0.5em;
+  font-size: 1.2rem;
+  margin: 0 0%;
+}
+button{
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+  margin-top: 16px;
+  cursor: pointer;
 }
