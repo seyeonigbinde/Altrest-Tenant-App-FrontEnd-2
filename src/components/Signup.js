@@ -76,9 +76,8 @@ const Signup = (props) => {
 
     return(
     
-    <div className="form_section">
+    <section className="form_section">
         <h1>Create Account</h1><br/>
-        <p>Enter your information below to continue</p><br/>
         <form onSubmit={handleSubmit}>
             <div className="form-group form-label mt-3">
                 <label htmlFor="firstName">First Name:</label>
@@ -116,13 +115,18 @@ const Signup = (props) => {
           	</select>
               <p className='errors'>{formErrors.role}</p>
             </div>
+            <div>
+            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."/>
+           I agree to ALTREST's terms of service and consent to ALTREST's privacy policy.
+           </div>
+           <br/>
             {/* {
                 props.error && <div data-testid="errorAlert" className="alert alert-danger" role="alert">Error: {props.error}</div>
             } */}
             <button disabled={disabled}>Create Account</button>
         </form><br/>
             <p className="signup_login"> Already have an account? <Link to="/login">Login</Link></p>
-    </div>
+    </section>
     );
 }
   
