@@ -24,7 +24,7 @@ function App() {
         <Link> 
           <ul className="nav nav-tabs w-100 ">
             <li className="nav-item dropdown w-100">
-              <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Products</Link>
+              <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><b>Products</b></Link>
                 <ul className="dropdown-menu p-2">
                   <li><Link className="dropdown-item p-3" to='/landlords'>Landlords</Link></li>
                   <li><Link className="dropdown-item p-3" to='/tenants'>Tenants</Link></li>
@@ -34,8 +34,8 @@ function App() {
             </li>
           </ul>
         </Link>
-        <Link>Pricing</Link>
-        <Link to='/about'>Company</Link>
+        <Link><b>Pricing</b></Link>
+        <Link to='/about'><b>Company</b></Link>
        
         </div>
         <div className="login">
