@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 import top_img_1 from '../images/top_img_1.jpeg'
 import top_img_4 from '../images/top_img_4.jpeg'
 import features_1 from '../images/features_1.jpeg'
 import features_2 from '../images/features_2.jpeg'
 import features_3 from '../images/features_3.jpeg'
 import * as Icon from 'react-bootstrap-icons'
-import { Link } from 'react-router-dom'
+import { BrowserRouter as Router, Link } from "react-router-dom"
 
 
 const Home = ()=> {
@@ -14,8 +14,8 @@ const Home = ()=> {
         <>
         <section className="homepage">
           <div className="top_content">
-              <h1><strong>ALTREST Tenant Management App</strong></h1><br/><br/>
-              <p>ALTREST is a digital facility management App that helps tenants and landlords manage communications, requests and payments </p>
+              <h1><strong>ALTREST Tenant Management App</strong></h1><br/>
+              <p>ALTREST is a digital facility management App that helps tenants and landlords manage communications, requests and payments </p><br/>
               <Link to='/signup'><button className="btn btn-lg btn-secondary">Get Started</button></Link>
           </div>
           <div className="top_image">
@@ -35,7 +35,7 @@ const Home = ()=> {
                     <li class="list-group-item p-3"><Icon.Check2Square /> Account Summary</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Rental Agreements</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Notices</li>
-                </ul>
+                </ul><br/>
              <Link to='/signup'><button className=" btn btn-primary">Get Started</button></Link> 
           </div>
         </section>
@@ -47,7 +47,7 @@ const Home = ()=> {
                     <li class="list-group-item p-3"> <Icon.Check2Square /> Online Maintenance Request</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Online Payments</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Rental Agreements & E-sign</li>
-                </ul>
+                </ul><br/>
                 <Link>  <button className=" btn btn-primary">Get Started</button></Link> 
           </div>
           <div className="top_image">
@@ -67,7 +67,7 @@ const Home = ()=> {
                     <li class="list-group-item p-3"><Icon.Check2Square /> Online Payment of Dues</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Violation Reports</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Community Announcements </li>
-                </ul>
+                </ul><br/>
                 <Link> <button className=" btn btn-primary">Get Started</button></Link> 
           </div>
         </section>
@@ -81,7 +81,7 @@ const Home = ()=> {
                     <li class="list-group-item p-3"><Icon.Check2Square /> Communicate with Clients</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Stay Organized with Calendar</li>
                     <li class="list-group-item p-3"><Icon.Check2Square /> Build Business Profile</li>
-                </ul>
+                </ul><br/>
                 <Link> <button className=" btn btn-primary">Get Started</button></Link> 
           </div>
           <div className="top_image">

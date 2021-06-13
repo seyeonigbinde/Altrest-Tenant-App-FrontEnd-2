@@ -7,7 +7,6 @@ import axios from 'axios';
 const initialFormValues = {
     firstName: '',
     lastName: '',
-    username: '',
     email: '',
     password: '',
     role: '',
@@ -16,7 +15,6 @@ const initialFormValues = {
   const initialFormErrors = {
     firstName: '',
     lastName: '',
-    username: '',
     email: '',
     password: '',
     role:'',
@@ -57,7 +55,6 @@ const Signup = (props) => {
         const newUser = {
             firstName: formValues.firstName.trim(),
             lastName: formValues.lastName.trim(),
-            username: formValues.username.trim(),
             email: formValues.email.trim(),
             password: formValues.password.trim(),
             role: formValues.role.trim(),
@@ -89,11 +86,6 @@ const Signup = (props) => {
                 <input className="form-control" onChange={handleChange} value={formValues.lastName} name="lastName" id="lastName"  placeholder ="Last Name" />
             </div>
             <p className='errors'>{formErrors.lastName}</p>
-            <div className="form-group form-label mt-3">
-                <label htmlFor="username">Username:</label>
-                <input className="form-control" onChange={handleChange} value={formValues.username} name="username" id="username"  placeholder ="Username" />
-            </div>
-            <p className='errors'>{formErrors.username}</p>
             <div className="form-group form-label mt-3">
                 <label htmlFor="email">Email Address:</label>
                 <input className="form-control" onChange={handleChange} value={formValues.email} name="email" id="email"  placeholder ="Email Address" />
