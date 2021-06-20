@@ -2,7 +2,7 @@ import React from 'react'
 import community from '../images/community.jpeg'
 import community_1 from '../images/community_1.jpeg'
 import community_2 from '../images/community_2.jpeg'
-import { BrowserRouter as Router, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Community = ()=> {
 

@@ -20,7 +20,7 @@ const initialFormValues = {
     role:'',
   }
 
-const Signup = (props) => {
+const Signup = () => {
     const { push } = useHistory();
 
     const [formValues, setFormValues] = useState(initialFormValues)
@@ -60,7 +60,7 @@ const Signup = (props) => {
             role: formValues.role.trim(),
           }
       
-          axios.post('https://tt16-secret-recipes.herokuapp.com/api/auth/register', newUser)
+          axios.post('https://altrest-app.herokuapp.com/api/auth/register', newUser)
             .then( res => {
               console.log(res)
               push('/login')

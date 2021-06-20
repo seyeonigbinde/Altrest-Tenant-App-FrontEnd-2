@@ -1,11 +1,11 @@
 import React from 'react'
 import top_img_1 from '../images/top_img_1.jpeg'
-import top_img_4 from '../images/top_img_4.jpeg'
-import features_1 from '../images/features_1.jpeg'
+import banner_image from '../images/banner_image.png'
+import tenant_home from '../images/tenant_home.png'
 import features_2 from '../images/features_2.jpeg'
 import features_3 from '../images/features_3.jpeg'
 import * as Icon from 'react-bootstrap-icons'
-import { BrowserRouter as Router, Link } from "react-router-dom"
+import {  Link } from "react-router-dom"
 
 
 const Home = ()=> {
@@ -16,15 +16,15 @@ const Home = ()=> {
           <div className="top_content">
               <h1><strong>ALTREST Tenant Management App</strong></h1><br/>
               <p>ALTREST is a digital facility management App that helps tenants and landlords manage communications, requests and payments </p><br/>
-              <Link to='/signup'><button className="btn btn-lg btn-secondary">Get Started</button></Link>
+              <Link to='/signup'><button className="btn btn-lg btn-primary">Get Started</button></Link>
           </div>
           <div className="top_image">
-              <img src={top_img_4} alt="top_image"/>
+              <img src={banner_image} alt="top_image"/>
           </div>
           </section>
           <section className="middlepage">
-          <div className="top_image">
-              <img src={features_1} alt="top_image"/>
+          <div className="body_image">
+              <img src={tenant_home} alt="top_image"/>
           </div>
           <div className="services_items"> 
             <h2>Landlords</h2>
@@ -50,12 +50,12 @@ const Home = ()=> {
                 </ul><br/>
                 <Link>  <button className=" btn btn-primary">Get Started</button></Link> 
           </div>
-          <div className="top_image">
+          <div className="body_image">
               <img src={top_img_1} alt="top_image"/>
           </div>
         </section>
         <section className="middlepage">
-        <div className="top_image">
+        <div className="body_image">
               <img src={features_2} alt="top_image"/>
           </div>
           <div className="services_items">
@@ -84,7 +84,7 @@ const Home = ()=> {
                 </ul><br/>
                 <Link> <button className=" btn btn-primary">Get Started</button></Link> 
           </div>
-          <div className="top_image">
+          <div className="body_image">
               <img src={features_3} alt="top_image"/>
           </div>
         </section>

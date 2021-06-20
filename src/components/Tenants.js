@@ -1,7 +1,7 @@
 import React from 'react'
 import tenants from '../images/tenants.jpeg'
 import tenant_1 from '../images/tenant_1.jpeg'
-import { BrowserRouter as Router, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Tenants = ()=> {
 

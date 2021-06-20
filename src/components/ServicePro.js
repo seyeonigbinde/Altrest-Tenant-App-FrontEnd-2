@@ -2,7 +2,7 @@ import React from 'react';
 import features_3 from '../images/features_3.jpeg'
 import servicepro_1 from '../images/servicepro_1.jpeg'
 import servicepro_2 from '../images/servicepro_2.jpeg'
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const ServicePro = ()=> {

@@ -3,7 +3,7 @@ import React, {useState } from "react";
 import { useHistory, Link } from 'react-router-dom';
 
   const credentials={
-    username: "",
+    email: "",
     password: ""
 }
 const Login = () => {
@@ -22,11 +22,10 @@ const Login = () => {
 
   const login = e => {
     e.preventDefault();
-    
-      axios.post('https://tt16-secret-recipes.herokuapp.com/api/auth/login', userLogin)
+      axios.post('https://altrest-app.herokuapp.com/api/auth/login', userLogin)
         .then(res=>{
         localStorage.setItem("token", res.data.token);
-          push('/dashboard');
+          push('/');
           console.log("Clicked")
         })
           .catch(err=>{
@@ -44,15 +43,15 @@ const Login = () => {
 
         <form onSubmit={login}>
         <div className="form-group form-label mt-3">
-          <label htmlFor="username">Username:  </label>
+          <label htmlFor="email">Email Address:  </label>
           <input
             className="form-control"
             type="text"
-            name="username"
-            data-testid="username"
-            value={userLogin.username}
+            name="email"
+            data-testid="email"
+            value={userLogin.email}
             onChange={handleChange}
-            placeholder ="Enter Username"
+            placeholder ="Enter Email Address"
           />
           </div>
          <div className="form-group form-label mt-3">

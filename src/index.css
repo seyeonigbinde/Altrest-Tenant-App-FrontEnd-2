@@ -46,6 +46,7 @@ header{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: #eee;
  
 }
 .logo{
@@ -86,26 +87,31 @@ header{
   font-size: .9rem;
 }
 .homepage{
-  background-color: #185adb;
+  background-color: #eee;
   width:100%;
   padding: 4% 4% 2%;
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: #4f4f4f;
   align-items: center;
 }
-.top_image{
+.top_image, .body_image{
   width:40%;
-  padding: 1% 2%;
+  padding: 2% 2%;
 }
 .top_image img{
  border-radius: 10px;
+ filter: brightness(60%);
 }
+.body_image img{
+  border-radius: 10px;
+ }
 .top_content{
   width: 45%;
 }
 .top_content h1{
   font-size: 3.2rem;
+  color: #185adb;
 }
 .middlepage{
   background-color: #fff;
@@ -126,6 +132,7 @@ header{
 }
 .howitworks h3{
   font-size: 1.6rem;
+  color: #185adb;
 }
 .howitworks-container{
   margin-bottom: 3%;

@@ -2,7 +2,7 @@ import React from 'react';
 import features_1 from '../images/features_1.jpeg'
 import landlord from '../images/landlord.jpeg'
 import landlord_1 from '../images/landlord_1.jpeg'
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Landlords = ()=> {
 

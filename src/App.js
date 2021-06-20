@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 import './App.css';
 import altrestlogo2 from './images/altrestlogo2.png';
 import Login from './components/Login';
@@ -18,57 +18,57 @@ function App() {
     <div className="App">
       <header>
         <div className="logo">
-          <Link to='/'><img src={altrestlogo2} alt="logo"/></Link>
+          <Link to='/'><img src={altrestlogo2} alt="logo" /></Link>
         </div>
         <div className="links">
-        <Link> 
-          <ul className="nav nav-tabs w-100 ">
-            <li className="nav-item dropdown w-100">
-              <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><b>Products</b></Link>
+          <Link>
+            <ul className="nav nav-tabs w-100 ">
+              <li className="nav-item dropdown w-100">
+                <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><b>Products</b></Link>
                 <ul className="dropdown-menu p-2">
                   <li><Link className="dropdown-item p-3" to='/landlords'>Landlords</Link></li>
                   <li><Link className="dropdown-item p-3" to='/tenants'>Tenants</Link></li>
                   <li><Link className="dropdown-item p-3" to='/community'>Community Associations</Link></li>
                   <li><Link className="dropdown-item p-3" to='/serviceprovider'>Service Providers</Link></li>
                 </ul>
-            </li>
-          </ul>
-        </Link>
-        <Link><b>Pricing</b></Link>
-        <Link to='/about'><b>Company</b></Link>
-       
+              </li>
+            </ul>
+          </Link>
+          <Link><b>Pricing</b></Link>
+          <Link to='/about'><b>Company</b></Link>
+
         </div>
         <div className="login">
-        <Link to='/login'><button className="btn btn-primary">Login</button></Link>
+          <Link to='/login'><button className="btn btn-primary">Login</button></Link>
         </div>
       </header>
       <Switch>
         <Route path='/serviceprovider'>
-          <ServicePro/>
+          <ServicePro />
         </Route>
         <Route path='/community'>
-          <Community/>
+          <Community />
         </Route>
         <Route path='/tenants'>
-          <Tenants/>
+          <Tenants />
         </Route>
         <Route path='/landlords'>
-          <Landlords/>
+          <Landlords />
         </Route>
         <Route path='/about'>
-          <About/>
+          <About />
         </Route>
         <Route path='/login'>
-          <Login/>
+          <Login />
         </Route>
         <Route path='/signup'>
-          <Signup/>
+          <Signup />
         </Route>
         <Route path='/'>
-          <Home/>
+          <Home />
         </Route>
       </Switch>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
