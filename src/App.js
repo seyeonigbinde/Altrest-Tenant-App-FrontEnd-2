@@ -1,7 +1,8 @@
 import React from 'react';
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+// import PrivateRoute from './utils/PrivateRoute'
 import './App.css';
-import altrestlogo2 from './images/altrestlogo2.png';
+
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Home from './components/Home';
@@ -11,38 +12,22 @@ import Tenants from './components/Tenants';
 import Landlords from './components/Landlords'
 import Community from './components/Community'
 import ServicePro from './components/ServicePro'
+import Dashboard from './components/Dashboard'
+import MaintenanceForm from './components/MaintenanceForm';
 
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <div className="logo">
-          <Link to='/'><img src={altrestlogo2} alt="logo" /></Link>
-        </div>
-        <div className="links">
-          <Link>
-            <ul className="nav nav-tabs w-100 ">
-              <li className="nav-item dropdown w-100">
-                <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><b>Products</b></Link>
-                <ul className="dropdown-menu p-2">
-                  <li><Link className="dropdown-item p-3" to='/landlords'>Landlords</Link></li>
-                  <li><Link className="dropdown-item p-3" to='/tenants'>Tenants</Link></li>
-                  <li><Link className="dropdown-item p-3" to='/community'>Community Associations</Link></li>
-                  <li><Link className="dropdown-item p-3" to='/serviceprovider'>Service Providers</Link></li>
-                </ul>
-              </li>
-            </ul>
-          </Link>
-          <Link><b>Pricing</b></Link>
-          <Link to='/about'><b>Company</b></Link>
-
-        </div>
-        <div className="login">
-          <Link to='/login'><button className="btn btn-primary">Login</button></Link>
-        </div>
-      </header>
+  
       <Switch>
+        {/* <PrivateRoute path='/dashboard' component={Dashboard} /> */}
+        <Route path='/dashboard'>
+          <Dashboard />
+        </Route>
+        <Route path='/maintenance'>
+          <MaintenanceForm />
+        </Route>
         <Route path='/serviceprovider'>
           <ServicePro />
         </Route>

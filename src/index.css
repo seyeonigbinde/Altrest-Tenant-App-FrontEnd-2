@@ -129,10 +129,10 @@ header{
   padding: 1% 0;
   font-size: 2.4rem;
   margin-top: 7%;
+  color: #185adb;
 }
 .howitworks h3{
   font-size: 1.6rem;
-  color: #185adb;
 }
 .howitworks-container{
   margin-bottom: 3%;
@@ -202,7 +202,7 @@ font-size: .8rem;
 }
 .features_banner{
   background-color: #eee;
-  box-shadow: 6px 4px 10px #4f4f4f;
+  /* box-shadow: 6px 4px 10px #4f4f4f; */
   border-radius: 10px;
   width:100%;
   padding: 3% 4% 4%;
