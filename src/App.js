@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
-// import PrivateRoute from './utils/PrivateRoute'
+import PrivateRoute from './utils/PrivateRoute'
 import './App.css';
 
 import Login from './components/Login';
@@ -13,7 +13,8 @@ import Landlords from './components/Landlords'
 import Community from './components/Community'
 import ServicePro from './components/ServicePro'
 import Dashboard from './components/Dashboard'
-import MaintenanceForm from './components/MaintenanceForm';
+import MaintenanceForm from './components/MaintenanceForm'
+import Maintenance from './components/Maintenance';
 
 
 function App() {
@@ -21,11 +22,11 @@ function App() {
     <div className="App">
   
       <Switch>
-        {/* <PrivateRoute path='/dashboard' component={Dashboard} /> */}
-        <Route path='/dashboard'>
-          <Dashboard />
-        </Route>
+        <PrivateRoute path='/dashboard' component={Dashboard} />
         <Route path='/maintenance'>
+          <Maintenance/>
+        </Route>
+        <Route path='/maintenanceform'>
           <MaintenanceForm />
         </Route>
         <Route path='/serviceprovider'>

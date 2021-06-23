@@ -12,8 +12,8 @@ const maintenanceSchema = yup.object().shape({
     .required('Please state your request')
     .max(500, 'Request cannot be more than 500 characters'),
 
-  request_image: yup.string()
-    .required('Please upload an image'),
+  request_image: yup.string(),
+    // .required('Please upload an image'),
   
   urgency: yup.string()
   .trim()

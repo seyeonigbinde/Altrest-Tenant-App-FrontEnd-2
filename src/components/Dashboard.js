@@ -38,8 +38,14 @@ const Dashboard = () => {
                     <p> Welcome {}</p>
                 </div>
                 <div>
-                    <Link>Create a New Request</Link>
+                    <Link to='/maintenanceform'>Create a New Request</Link>
                 </div>
+                {/* <div className="container">
+                    <div key={maintenance.id} >
+                    <h1>Title: {maintenance.title}</h1>
+                    <h3>Request: {maintenance.request}</h3>
+                    </div>
+                </div> */}
             </section>
 
         </section>

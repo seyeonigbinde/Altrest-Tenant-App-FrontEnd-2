@@ -59,7 +59,7 @@ const MaintenanceForm = () => {
             urgency: formValues.urgency.trim(),
         }
 
-        axiosWithAuth().post('/register', newRequest)
+        axiosWithAuth().post('/maintenance', newRequest)
             .then(res => {
                 console.log(res)
                 push('/dashboard')
@@ -104,12 +104,12 @@ const MaintenanceForm = () => {
                     <p className='errors'>{formErrors.title}</p>
                     <div className="form-group form-label mt-3">
                         <label htmlFor="request">Request:</label>
-                        <textarea className="form-control" onChange={handleChange} value={formValues.request} name="request" id="request" placeholder="State Your Request" />
+                        <textarea className="form-control" onChange={handleChange} value={formValues.request} name="request" id="floatingTextarea" placeholder="State Your Request" />
                     </div>
                     <p className='errors'>{formErrors.request}</p>
-                    <div className="form-group form-label mt-3">
-                        <label htmlFor="request_image">Request Image:</label>
-                        <input className="form-control" onChange={handleChange} value={formValues.request_image} name="request_image" id="request_image" type="image" placeholder="Upload Maintenance Image" />
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile02" onChange={handleChange} value={formValues.request_image} name="request_image"/>
+                            <label class="input-group-text" for="inputGroupFile02">Upload</label>
                     </div>
                     <p className='errors'>{formErrors.request_image}</p>
                     <div className="form-group mt-3">
