@@ -22,7 +22,7 @@ color: #4f4f4f;
 *{
   box-sizing: border-box; 
    max-width:100%; 
-   border: 1px solid red; 
+   /* border: 1px solid red;  */
   margin: 0 auto;
  
 }
