@@ -22,7 +22,7 @@ color: #4f4f4f;
 *{
   box-sizing: border-box; 
    max-width:100%; 
-   /* border: 1px solid red;  */
+   border: 1px solid red; 
   margin: 0 auto;
  
 }
@@ -239,6 +239,16 @@ font-size: .8rem;
 .the_dashboard{
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+.the_dashboard_links{
+  width: 25%;
+}
+.the_dashboard_links2{
+  display: none;
+}
+.the_dashboard_content{
+  width: 75%;
 }
 .dashboard_container{
   display: flex;
@@ -271,7 +281,7 @@ font-size: .8rem;
   margin-top: 3%;
 }
 .form_section2{
-  width: 100%;
+  width: 70%;
 }
 label{
   float: left;
@@ -370,6 +380,9 @@ footer p{
   .top_image{
     display: none;
   }
+  .body_image{
+    display: none;
+  }
   .services_items{
     width: 95%;
   }
@@ -382,11 +395,91 @@ footer p{
   .howitworks{
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top:8%
+    margin-top:9%
   }
   .howitworks div{
     width: 23%;
   }
+  .the_dashboard_links{
+    display: none;
+  }
+  .the_dashboard_links2{
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 1.2rem;
+  }
+  h3{
+    font-size: 0.8rem;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+  nav{
+    padding: 1%;
+  }
+.links{ 
+  font-size: 0.7rem;
+  padding: 1.5%;
+}
+.login{
+  width:18%;
+}
+.login button{
+font-size: 0.6em;
+padding: 4% 2%;
+}
+.top_content h1{
+  font-size: 2.2rem;
+}
+.dropdown-item{ 
+  font-size: 0.7rem;
+}
+
+.howitworks-container{
+display: none;
+}
+.howitworks div{
+  width: 23%;
+}
+.about_vision{
+  width:90%;
+}
+.aboutimg{
+  height: 20vh;
+}
+.list-group-item{
+  font-size: 0.9rem;
+}
+.form_section label{
+  font-size: 0.9rem;
+}
+.form_section2{
+  width: 100%;
+}
+.form_section2 button{
+  font-size: 0.8rem;
+  margin-bottom:1% ;
+}
+.signup_login{
+  font-size: 0.7rem;
+}
+.footer_copyright{
+ width: 100%;
+}
+.footer_copyright p{
+  font-size: 0.7rem;
+ }
+.footer_social{
+  display: none;
+}
+
 }
 
 
