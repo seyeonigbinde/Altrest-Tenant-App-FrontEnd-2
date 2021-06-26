@@ -1,6 +1,7 @@
 import React from 'react';
 import altrestlogo2 from '../images/altrestlogo2.png';
 import { Link } from "react-router-dom"
+import Footer from './Footer';
 
 const About = () => {
 
@@ -57,6 +58,7 @@ const About = () => {
                     <b>Safety</b> - We have created a secured and safe environment for our clients to transact while we hold our loyal customers with high esteem and reward them accordingly.
             </p>
             </div>
+            <Footer/>
         </section>
     )
 }

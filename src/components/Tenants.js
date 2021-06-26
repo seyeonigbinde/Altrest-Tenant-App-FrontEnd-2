@@ -1,8 +1,9 @@
 import React from 'react'
 import altrestlogo2 from '../images/altrestlogo2.png';
-import tenants from '../images/tenants.jpeg'
+import banner_image from '../images/banner_image.png'
 import tenant_1 from '../images/tenant_1.jpeg'
 import { Link } from "react-router-dom"
+import Footer from './Footer'
 
 const Tenants = () => {
 
@@ -40,7 +41,7 @@ const Tenants = () => {
                     <Link to='/signup'><button className="btn btn-lg btn-primary">Get Started</button></Link>
                 </div>
                 <div className="features_top">
-                    <img src={tenants} alt="top_image" />
+                    <img src={banner_image} alt="top_image" />
                 </div>
             </section>
             <section className="tenant_container">
@@ -62,6 +63,7 @@ const Tenants = () => {
                     <img src={tenant_1} alt="features_pix" />
                 </div>
             </section>
+            <Footer/>
         </section>
     )
 }

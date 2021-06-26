@@ -5,6 +5,7 @@ import formSchema from '../utils/formSchema';
 import axios from 'axios';
 
 import altrestlogo2 from '../images/altrestlogo2.png';
+import DashFooter from './DashFooter';
 
 const initialFormValues = {
   firstName: '',
@@ -126,6 +127,7 @@ const Signup = () => {
         </form><br />
         <p className="signup_login"> Already have an account? <Link to="/login">Login</Link></p>
       </section>
+      <DashFooter/>
     </section>
   );
 }

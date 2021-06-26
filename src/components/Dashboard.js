@@ -6,6 +6,7 @@ import { Route, Switch, Link } from "react-router-dom";
 import Maintenance from './Maintenance'
 import MaintenanceForm from './MaintenanceForm'
 import MaintenanceList from './MaintenanceList'
+import DashFooter from './DashFooter';
 
 const Dashboard = () => {
 
@@ -100,8 +101,10 @@ const Dashboard = () => {
                             <MaintenanceForm />
                         </Route>
                     </Switch>
+                    
                 </section>
             </section>
+            <DashFooter/>
         </section>
 
 

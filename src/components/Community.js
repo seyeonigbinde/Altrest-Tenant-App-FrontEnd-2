@@ -1,9 +1,10 @@
 import React from 'react'
 import altrestlogo2 from '../images/altrestlogo2.png';
-import community from '../images/community.jpeg'
+import banner_image from '../images/banner_image.png'
 import community_1 from '../images/community_1.jpeg'
 import community_2 from '../images/community_2.jpeg'
 import { Link } from "react-router-dom"
+import Footer from './Footer'
 
 const Community = () => {
 
@@ -42,7 +43,7 @@ const Community = () => {
                     <Link to='/signup'><button className="btn btn-lg btn-primary">Get Started</button></Link>
                 </div>
                 <div className="features_top">
-                    <img src={community} alt="top_image" />
+                    <img src={banner_image} alt="top_image" />
                 </div>
             </section>
             <section className="community_container">
@@ -69,6 +70,7 @@ const Community = () => {
                     <img src={community_2} alt="features_pix" />
                 </div>
             </section>
+            <Footer/>
         </section>
     )
 }

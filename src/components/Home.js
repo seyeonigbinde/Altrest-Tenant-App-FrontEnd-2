@@ -7,6 +7,7 @@ import community_2 from '../images/community_2.jpeg'
 import features_3 from '../images/features_3.jpeg'
 import * as Icon from 'react-bootstrap-icons'
 import { Link } from "react-router-dom"
+import Footer from './Footer';
 
 
 const Home = () => {
@@ -146,6 +147,7 @@ const Home = () => {
                     </div>
                 </section>
             </div>
+            <Footer/>
         </>
     )
 }

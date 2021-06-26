@@ -3,6 +3,7 @@ import altrestlogo2 from '../images/altrestlogo2.png';
 import features_1 from '../images/features_1.jpeg'
 import banner_image from '../images/banner_image.png'
 import landlord_1 from '../images/landlord_1.jpeg'
+import Footer from './Footer'
 import { Link } from "react-router-dom";
 
 const Landlords = () => {
@@ -69,6 +70,7 @@ const Landlords = () => {
                     <img src={landlord_1} alt="features_pix" />
                 </div>
             </section>
+            <Footer/>
         </section>
     )
 }

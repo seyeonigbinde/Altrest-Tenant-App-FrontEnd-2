@@ -1,9 +1,10 @@
 import React from 'react';
 import altrestlogo2 from '../images/altrestlogo2.png';
-import features_3 from '../images/features_3.jpeg'
+import banner_image from '../images/banner_image.png'
 import servicepro_1 from '../images/servicepro_1.jpeg'
 import servicepro_2 from '../images/servicepro_2.jpeg'
 import { Link } from "react-router-dom";
+import Footer from './Footer';
 
 
 const ServicePro = () => {
@@ -43,7 +44,7 @@ const ServicePro = () => {
                     <Link to='/signup'><button className="btn btn-lg btn-primary">Get Started</button></Link>
                 </div>
                 <div className="features_top">
-                    <img src={features_3} alt="top_image" />
+                    <img src={banner_image} alt="top_image" />
                 </div>
             </section>
             <section className="servicepro_container">
@@ -70,6 +71,7 @@ const ServicePro = () => {
                     <img src={servicepro_2} alt="features_pix" />
                 </div>
             </section>
+            <Footer/>
         </section>
     )
 }
