@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import { axiosWithAuth } from './../utils/axiosWithAuth';
 import { useParams  } from 'react-router-dom';
-// import Dashboard from './Dashboard';
+import Dashboard from './Dashboard';
 
 const Maintenance = () => {
 
@@ -12,9 +12,10 @@ const Maintenance = () => {
     const { id } = useParams();
 
     useEffect(()=>{
-        axiosWithAuth().get('/maintenance/:id')
+        axiosWithAuth().get('/maintenance')
         .then(res => {
          setMaintenance(res.data)
+         console.log(res.data)
      })
         .catch(err => {
         console.log(err)
@@ -24,16 +25,16 @@ const Maintenance = () => {
     return (
         <>
         <div>
-        {/* {
-        maintenance.map(maintenance=><Dashboard maintenance={maintenance} key={maintenance.id}/>)
-        }  */}
+        {
+        maintenance.map(maintain=><Dashboard maintain={maintain} key={maintain.id}/>)
+        } 
         </div>
-        <div className="container">
+        {/* <div className="container">
                     <div key={maintenance.id} >
                     <h1>Title: {maintenance.title}</h1>
                     <h3>Request: {maintenance.request}</h3>
                     </div>
-                </div>
+                </div> */}
 
         </>
 

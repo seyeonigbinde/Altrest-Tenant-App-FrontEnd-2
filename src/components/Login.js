@@ -30,7 +30,7 @@ const Login = () => {
     axios.post('https://altrest-app.herokuapp.com/api/auth/login', newUser)
       .then(res => {
         localStorage.setItem("token", res.data.token);
-        push('/dash');
+        push('/dashboard');
         console.log(res)
       })
       .catch(err => {

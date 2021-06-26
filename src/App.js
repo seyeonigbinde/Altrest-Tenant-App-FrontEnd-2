@@ -6,7 +6,7 @@ import './App.css';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Home from './components/Home';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import About from './components/About';
 import Tenants from './components/Tenants';
 import Landlords from './components/Landlords'
@@ -54,7 +54,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
-      <Footer />
+     
     </div>
   );
 }
