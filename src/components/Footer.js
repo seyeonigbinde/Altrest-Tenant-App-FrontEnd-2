@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
 
     return (
-        <footer>
-            <section className="modal-footer footer_body">
+        <footer className="footer">
+            <section className=" footer_body">
                 <div className="footer_links">
                     <h4>Company</h4>
 

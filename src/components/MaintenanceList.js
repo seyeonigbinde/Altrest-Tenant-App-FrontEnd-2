@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { axiosWithAuth } from '../utils/axiosWithAuth'
-import { useParams, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 const MaintenanceList = () => {
 
 	const [maintenance, setMaintenance] = useState([]);
-	// const [delRequest, setDelRequest] = useState(false);
 
-	const { maintenance_id } = useParams();
 	const { push } = useHistory();
 
 	useEffect(() => {
@@ -21,7 +19,7 @@ const MaintenanceList = () => {
 	})
 
 	const handleDeleteClick = () => {
-		axiosWithAuth().delete(`/maintenance/${maintenance_id}`)
+		axiosWithAuth().delete(`/maintenance`)
 			.then(res => {
 				setMaintenance(res.data);
 				push('/dashboard');

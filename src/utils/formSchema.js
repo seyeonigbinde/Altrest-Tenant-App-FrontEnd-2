@@ -5,24 +5,31 @@ const formSchema = yup.object().shape({
   firstName: yup.string()
     .trim()
     .required('First Name is required')
-    .min(3, 'First Name  must be at least 3 characters long'),
+    .min(3, 'First Name must be at least 3 characters long'),
 
   lastName: yup.string()
     .trim()
-    .required('Last Name is required')
-    .min(3, 'Last Name  must be at least 3 characters long'),
+    .required('Surname is required')
+    .min(3, 'Last Name must be at least 3 characters long'),
 
   email: yup.string()
-    .required('Email is required')
+    .trim()
+    .required('Email Address is required')
     .email('Must be a valid email address'),
-  
+  phone: yup.string()
+    .required('Phone Number is required')
+    .max(11, 'Phone Number cannot be more than 11 characters'),
+  address: yup.string()
+    .trim()
+    .required('House address is required'),
+  location: yup.string()
+    .trim()
+    .required('Please select your location'),
   password: yup.string()
     .trim()
     .required('Password is required')
     .min(6, 'Password must be at least 6 characters long'),
-  role: yup.string()
-    .trim()
-    .required('You need to select a role'),
+  
 })
 
 export default formSchema

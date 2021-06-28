@@ -76,7 +76,7 @@ const Home = () => {
                         <li class="list-group-item p-3"><Icon.Check2Square /> Online Payments</li>
                         <li class="list-group-item p-3"><Icon.Check2Square /> Rental Agreements & E-sign</li>
                     </ul><br />
-                    <Link>  <button className=" btn btn-primary">Get Started</button></Link>
+                    <Link to='/signup'>  <button className=" btn btn-primary">Get Started</button></Link>
                 </div>
                 <div className="body_image">
                     <img src={top_img_1} alt="top_image" />
@@ -96,7 +96,7 @@ const Home = () => {
                         <li class="list-group-item p-3"><Icon.Check2Square /> Violation Reports</li>
                         <li class="list-group-item p-3"><Icon.Check2Square /> Community Announcements </li>
                     </ul><br />
-                    <Link> <button className=" btn btn-primary">Get Started</button></Link>
+                    <Link to='/signup'> <button className=" btn btn-primary">Get Started</button></Link>
                 </div>
             </section>
             <section className="middlepage">
@@ -110,7 +110,7 @@ const Home = () => {
                         <li class="list-group-item p-3"><Icon.Check2Square /> Stay Organized with Calendar</li>
                         <li class="list-group-item p-3"><Icon.Check2Square /> Build Business Profile</li>
                     </ul><br />
-                    <Link> <button className=" btn btn-primary">Get Started</button></Link>
+                    <Link to='/signup'> <button className=" btn btn-primary">Get Started</button></Link>
                 </div>
                 <div className="body_image">
                     <img src={features_3} alt="top_image" />
@@ -128,7 +128,7 @@ const Home = () => {
                             <span className="fas fa-plus-circle fa-2x" style={{ color: '#185adb' }}></span><br />
                         </span>
                         <h3>Create An Account</h3>
-                        <p>Register your details by filling our signup form</p>
+                        <p>Lanlord registers his details by filling our signup form</p>
                     </div>
                     <div>
                         <i class="fas fa-envelope-open fa-2x" style={{ color: '#185adb' }}></i><br />
@@ -136,14 +136,14 @@ const Home = () => {
                         <p>Check your email for the verification link.</p>
                     </div>
                     <div>
-                        <i className="fas fa-hand-pointer fa-2x" style={{ color: '#185adb' }}></i><br />
-                        <h3>Select Your Role</h3>
-                        <p>Select your role on the platform (Landlord, Tenant or Community Association).</p>
+                        <i className="fas fa-home fa-2x" style={{ color: '#185adb' }}></i><br />
+                        <h3>Add Property</h3>
+                        <p>Landlord adds the details of his property.</p>
                     </div>
                     <div>
                         <i className="fas fa-users fa-2x" style={{ color: '#185adb' }}></i><br />
-                        <h3>Select Features</h3>
-                        <p>Select the services you want to have access to on the platform</p>
+                        <h3>Add Tenants</h3>
+                        <p>Landlord adds tenants details to each property</p>
                     </div>
                 </section>
             </div>

@@ -11,16 +11,20 @@ const initialFormValues = {
   firstName: '',
   lastName: '',
   email: '',
+  phone: '',
+  address: '',
+  location: '',
   password: '',
-  role: '',
 }
 
 const initialFormErrors = {
   firstName: '',
   lastName: '',
   email: '',
+  phone: '',
+  address: '',
+  location: '',
   password: '',
-  role: '',
 }
 
 const Signup = () => {
@@ -59,8 +63,10 @@ const Signup = () => {
       firstName: formValues.firstName.trim(),
       lastName: formValues.lastName.trim(),
       email: formValues.email.trim(),
+      phone: formValues.phone.trim(),
+      address: formValues.address.trim(),
+      location: formValues.location.trim(),
       password: formValues.password.trim(),
-      role: formValues.role.trim(),
     }
 
     axios.post('https://altrest-app.herokuapp.com/api/auth/register', newUser)
@@ -100,20 +106,63 @@ const Signup = () => {
           </div>
           <p className='errors'>{formErrors.email}</p>
           <div className="form-group form-label mt-3">
+            <label htmlFor="email">Phone Number:</label>
+            <input className="form-control" onChange={handleChange} value={formValues.phone} name="phone" id="phone" placeholder="Phone Number" />
+          </div>
+          <p className='errors'>{formErrors.phone}</p>
+          <div className="form-group form-label mt-3">
+            <label htmlFor="email">Address:</label>
+            <textarea className="form-control" onChange={handleChange} value={formValues.address} name="address"  rows="2" id="address" placeholder="House Address" />
+          </div>
+          <p className='errors'>{formErrors.address}</p>
+          <div className="form-group mt-3">
+            <select className="form-select" value={formValues.location} name="location" onChange={handleChange} >
+              <option value="">-- Select Location --</option>
+              <option value="Abuja">Abuja</option>
+              <option value="Abia">Abia</option>
+              <option value="Adamawa">Adamawa</option>
+              <option value="Akwa Ibom">Akwa Ibom</option>
+              <option value="Anambra">Anambra</option>
+              <option value="Bauchi">Bauchi</option>
+              <option value="Bayelsa">Bayelsa</option>
+              <option value="Benue">Benue</option>
+              <option value="Borno">Borno</option>
+              <option value="Cross River">Cross River</option>
+              <option value="Delta">Delta</option>
+              <option value="Ebonyi">Ebonyi</option>
+              <option value="Edo">Edo</option>
+              <option value="Ekiti">Ekiti</option>
+              <option value="Enugu">Enugu</option>
+              <option value="Gombe">Gombe</option>
+              <option value="Imo">Imo</option>
+              <option value="Jigawa">Jigawa</option>
+              <option value="Kaduna">Kaduna</option>
+              <option value="Kano">Kano</option>
+              <option value="Katsina">Katsina</option>
+              <option value="Kebbi">Kebbi</option>
+              <option value="Kogi">Kogi</option>
+              <option value="Kwara">Kwara</option>
+              <option value="Lagos">Lagos</option>
+              <option value="Nassarawa">Nassarawa</option>
+              <option value="Niger">Niger</option>
+              <option value="Ogun">Ogun</option>
+              <option value="Ondo">Ondo</option>
+              <option value="Osun">Osun</option>
+              <option value="Oyo">Oyo</option>
+              <option value="Plateau">Plateau</option>
+              <option value="Rivers">Rivers</option>
+              <option value="Sokoto">Sokoto</option>
+              <option value="Taraba">Taraba</option>
+              <option value="Yobe">Yobe</option>
+              <option value="Zamfara">Zamfara</option>
+            </select>
+            <p className='errors'>{formErrors.location}</p>
+          </div>
+          <div className="form-group form-label mt-3">
             <label htmlFor="password">Password:</label>
             <input className="form-control" onChange={handleChange} value={formValues.password} name="password" id="password" type="password" placeholder="Password" />
             <p className='errors'>{formErrors.password}</p>
             {/* <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> */}
-          </div>
-          <div className="form-group mt-3">
-            <select className="form-select" value={formValues.role} name="role" onChange={handleChange} >
-              <option value="">-- Select a role --</option>
-              <option value="1">Landlord</option>
-              <option value="2">Tenant</option>
-              <option value="3">Community Resident</option>
-              <option value="4">Service Provider</option>
-            </select>
-            <p className='errors'>{formErrors.role}</p>
           </div>
           <div>
             <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />

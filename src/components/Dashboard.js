@@ -8,6 +8,11 @@ import MaintenanceForm from './MaintenanceForm'
 import MaintenanceList from './MaintenanceList'
 import DashFooter from './DashFooter';
 import Dashboard_Home from './Dashboard_Home';
+import PropertyForm from './PropertyForm';
+import AddTenant from './AddTenant';
+import TenantList from './TenantList';
+import PropertyList from './PropertyList';
+import UserProfile from './UserProfile';
 
 const Dashboard = () => {
 
@@ -39,10 +44,10 @@ const Dashboard = () => {
             <section className="the_dashboard">
                 <section className="the_dashboard_links">
                     <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{ width: 280 }}>
-                        <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <Link to='/dashboard' className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                             <svg className="bi me-2" width="40" height="32"><use xlinkHref="#speedometer2" /></svg>
                             <span className="fs-4">Dashboard</span>
-                        </a>
+                        </Link>
                         <hr />
                         <ul className="nav nav-pills flex-column mb-auto align-items-start">
                             <li className="nav-item">
@@ -52,27 +57,39 @@ const Dashboard = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/dashboard/request' className="nav-link text-white">
+                                <Link to='/dashboard/addproperty' className="nav-link text-white">
                                     <svg className="bi me-2" width="16" height="16"><use xlinkHref="#speedometer2" /></svg>
-                                    My Request
+                                    Add Property
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/dashboard/maintenanceform' className="nav-link text-white">
+                                <Link to='/dashboard/addtenant' className="nav-link text-white">
                                     <svg className="bi me-2" width="16" height="16"><use xlinkHref="#collection" /></svg>
+                                    Add Tenant
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='/dashboard/maintenancerequest'  className="nav-link text-white">
+                                    <svg className="bi me-2" width="16" height="16"><use xlinkHref="#grid" /></svg>
                                     Add Request
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="nav-link text-white">
-                                    <svg className="bi me-2" width="16" height="16"><use xlinkHref="#grid" /></svg>
-                                    Make Payment
+                                <Link to='/dashboard/propertylist' className="nav-link text-white">
+                                    <svg className="bi me-2" width="16" height="16"><use xlinkHref="#people-circle" /></svg>
+                                    My Property
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="nav-link text-white">
-                                    <svg className="bi me-2" width="16" height="16"><use xlinkHref="#people-circle" /></svg>
-                                    My Documents
+                                <Link to='/dashboard/tenantlist' className="nav-link text-white">
+                                    <svg className="bi me-2" width="16" height="16"><use xlinkHref="#cpu-fill" /></svg>
+                                    My Tenants
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='/dashboard/request' className="nav-link text-white">
+                                    <svg className="bi me-2" width="16" height="16"><use xlinkHref="#tools" /></svg>
+                                    My Requests
                                 </Link>
                             </li>
                         </ul>
@@ -85,7 +102,7 @@ const Dashboard = () => {
                             <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
                                 <li><a className="dropdown-item" href="#">Contact Us</a></li>
                                 <li><a className="dropdown-item" href="#">Settings</a></li>
-                                <li><a className="dropdown-item" href="#">Profile</a></li>
+                                <li><Link to='/dashboard/profile' className="dropdown-item">Profile</Link></li>
                                 <li><hr className="dropdown-divider" /></li>
                                 <li><Link className="dropdown-item" onClick={logOut}>Sign out</Link></li>
                             </ul>
@@ -94,10 +111,10 @@ const Dashboard = () => {
                 </section>
                 <section className="the_dashboard_links2">
                     <div class="d-flex flex-column flex-shrink-0 bg-light" style={{ width: 4.5 + 'rem' }}>
-                        <a href="/" class="d-block p-3 link-dark text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <Link to='/dashboard' class="d-block p-3 link-dark text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
                             <svg class="bi" width="40" height="32"><use xlinkHref="#speedometer2" /></svg>
                             <span class="visually-hidden">Icon-only</span>
-                        </a>
+                        </Link>
                         <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                             <li class="nav-item">
                                 <Link to='/dashboard' class="nav-link active py-3 border-bottom" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
@@ -105,34 +122,44 @@ const Dashboard = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link  to='/dashboard/request' class="nav-link py-3 border-bottom" title=" My Request" data-bs-toggle="tooltip" data-bs-placement="right">
+                                <Link  to='/dashboard/addproperty' class="nav-link py-3 border-bottom" title=" My Property" data-bs-toggle="tooltip" data-bs-placement="right">
                                     <svg class="bi" width="24" height="24"><use xlinkHref="#speedometer2" /></svg>
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/dashboard/maintenanceform' class="nav-link py-3 border-bottom" title="Add Request" data-bs-toggle="tooltip" data-bs-placement="right">
+                                <Link to='/dashboard/addtenant' class="nav-link py-3 border-bottom" title="Add Tenant" data-bs-toggle="tooltip" data-bs-placement="right">
                                     <svg class="bi" width="24" height="24"><use xlinkHref="#table" /></svg>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" class="nav-link py-3 border-bottom" title="Make Payment" data-bs-toggle="tooltip" data-bs-placement="right">
+                                <Link to='/dashboard/maintenancerequest' class="nav-link py-3 border-bottom" title="Add Request" data-bs-toggle="tooltip" data-bs-placement="right">
                                     <svg class="bi" width="24" height="24"><use xlinkHref="#grid" /></svg>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" class="nav-link py-3 border-bottom" title="My Documents" data-bs-toggle="tooltip" data-bs-placement="right">
-                                    <svg class="bi" width="24" height="24"><use xlinkHref="#people-circle" /></svg>
+                                <Link to='/dashboard/propertylist' class="nav-link py-3 border-bottom" title="My Property" data-bs-toggle="tooltip" data-bs-placement="right">
+                                    <svg class="bi" width="24" height="24"><use xlinkHref="#toggles2" /></svg>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='/dashboard/tenantlist' class="nav-link py-3 border-bottom" title="My Tenants" data-bs-toggle="tooltip" data-bs-placement="right">
+                                    <svg class="bi" width="24" height="24"><use xlinkHref="#cpu-fill" /></svg>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='/dashboard/request' class="nav-link py-3 border-bottom" title="My Requests" data-bs-toggle="tooltip" data-bs-placement="right">
+                                    <svg class="bi" width="24" height="24"><use xlinkHref="#chat-quote-fill" /></svg>
                                 </Link>
                             </li>
                         </ul>
                         <div class="dropdown border-top">
-                            <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="https://avatars.githubusercontent.com/u/79403650?v=4" alt="mdo" width="24" height="24" class="rounded-circle" />
-                            </a>
+                            </Link>
                             <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
                                 <li><a className="dropdown-item" href="#">Contact Us</a></li>
                                 <li><a className="dropdown-item" href="#">Settings</a></li>
-                                <li><a className="dropdown-item" href="#">Profile</a></li>
+                                <li><Link to='/dashboard/profile' className="dropdown-item">Profile</Link></li>
                                 <li><hr className="dropdown-divider" /></li>
                                 <li><Link className="dropdown-item" onClick={logOut}>Sign out</Link></li>
                             </ul>
@@ -150,8 +177,23 @@ const Dashboard = () => {
                         <Route path='/dashboard/maintenance'>
                             <Maintenance />
                         </Route>
-                        <Route path='/dashboard/maintenanceform'>
+                        <Route path='/dashboard/maintenancerequest'>
                             <MaintenanceForm />
+                        </Route>
+                        <Route path='/dashboard/addproperty'>
+                            <PropertyForm />
+                        </Route>
+                        <Route path='/dashboard/addtenant'>
+                            <AddTenant />
+                        </Route>
+                        <Route path='/dashboard/tenantlist'>
+                            <TenantList />
+                        </Route>
+                        <Route path='/dashboard/propertylist'>
+                            <PropertyList />
+                        </Route>
+                        <Route path='/dashboard/profile'>
+                            <UserProfile />
                         </Route>
                     </Switch>
                 </section>

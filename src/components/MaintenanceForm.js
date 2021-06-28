@@ -61,7 +61,7 @@ const MaintenanceForm = () => {
         axiosWithAuth().post('/maintenance', newRequest)
             .then(res => {
                 console.log(res)
-                push('/dashboard')
+                push('/maintenancerequest')
             })
             .catch(err => {
                 console.log(err)
@@ -114,10 +114,7 @@ const MaintenanceForm = () => {
                 </form><br />
             </section>
         </section>
-
-
     )
-
 }
 
 export default MaintenanceForm;
