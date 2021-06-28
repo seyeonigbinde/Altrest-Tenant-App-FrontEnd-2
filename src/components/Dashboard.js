@@ -43,10 +43,10 @@ const Dashboard = () => {
             </header>
             <section className="the_dashboard">
                 <section className="the_dashboard_links">
-                    <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{ width: 280 }}>
-                        <Link className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <div className="d-flex flex-column flex-shrink-0 p-3 text-dark bg-white" style={{ width: 280 }}>
+                        <Link className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                             <svg className="bi me-2" width="40" height="32"><use xlinkHref="#speedometer2" /></svg>
-                            <span className="fs-4">Dashboard</span>
+                            <span className="fs-4">My Dashboard</span>
                         </Link>
                         <hr />
                         <ul className="nav nav-pills flex-column mb-auto align-items-start">
@@ -57,37 +57,37 @@ const Dashboard = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/dashboard/addproperty' className="nav-link text-white">
+                                <Link to='/dashboard/addproperty' className="nav-link text-dark">
                                     <svg className="bi me-2" width="16" height="16"><use xlinkHref="#speedometer2" /></svg>
                                     Add Property
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/dashboard/addtenant' className="nav-link text-white">
+                                <Link to='/dashboard/addtenant' className="nav-link text-dark">
                                     <svg className="bi me-2" width="16" height="16"><use xlinkHref="#collection" /></svg>
                                     Add Tenant
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/dashboard/maintenancerequest'  className="nav-link text-white">
+                                <Link to='/dashboard/maintenancerequest'  className="nav-link text-dark">
                                     <svg className="bi me-2" width="16" height="16"><use xlinkHref="#grid" /></svg>
                                     Add Request
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/dashboard/propertylist' className="nav-link text-white">
+                                <Link to='/dashboard/propertylist' className="nav-link text-dark">
                                     <svg className="bi me-2" width="16" height="16"><use xlinkHref="#people-circle" /></svg>
                                     My Property
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/dashboard/tenantlist' className="nav-link text-white">
+                                <Link to='/dashboard/tenantlist' className="nav-link text-dark">
                                     <svg className="bi me-2" width="16" height="16"><use xlinkHref="#cpu-fill" /></svg>
                                     My Tenants
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/dashboard/request' className="nav-link text-white">
+                                <Link to='/dashboard/request' className="nav-link text-dark">
                                     <svg className="bi me-2" width="16" height="16"><use xlinkHref="#tools" /></svg>
                                     My Requests
                                 </Link>
@@ -95,7 +95,7 @@ const Dashboard = () => {
                         </ul>
                         <hr />
                         <div className="dropdown">
-                            <a href="#" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="#" className="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="https://avatars.githubusercontent.com/u/79403650?v=4" alt="" width="32" height="32" class="rounded-circle me-2" />
                                 <strong>Profile</strong>
                             </a>
