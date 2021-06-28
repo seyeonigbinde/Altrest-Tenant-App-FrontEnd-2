@@ -44,7 +44,7 @@ const Dashboard = () => {
             <section className="the_dashboard">
                 <section className="the_dashboard_links">
                     <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{ width: 280 }}>
-                        <Link to='/dashboard' className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <Link className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                             <svg className="bi me-2" width="40" height="32"><use xlinkHref="#speedometer2" /></svg>
                             <span className="fs-4">Dashboard</span>
                         </Link>
@@ -111,7 +111,7 @@ const Dashboard = () => {
                 </section>
                 <section className="the_dashboard_links2">
                     <div class="d-flex flex-column flex-shrink-0 bg-light" style={{ width: 4.5 + 'rem' }}>
-                        <Link to='/dashboard' class="d-block p-3 link-dark text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <Link class="d-block p-3 link-dark text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
                             <svg class="bi" width="40" height="32"><use xlinkHref="#speedometer2" /></svg>
                             <span class="visually-hidden">Icon-only</span>
                         </Link>

@@ -20,11 +20,12 @@ const PropertyList = () => {
 		<>
 			<section>
 				<div className="dashboard_container">
+                    <h4>My Property</h4>
 					{property.map((property, i) => {
 						return (
 							<div className="dashboard_card" key={i}>
 								<h5>Name: {property.owner}</h5>
-								<p><b>Address:</b> {property.property_address}, 
+								<p><b>Property Address:</b> {property.property_address}, 
                                 {property.property_city}, 
                                 {property.property_state} State</p>
 							</div>

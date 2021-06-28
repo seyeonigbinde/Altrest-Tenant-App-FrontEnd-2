@@ -20,6 +20,7 @@ const TenantList = () => {
 		<>
 			<section>
 				<div className="dashboard_container">
+                <h4>My Tenants</h4>
 					{tenant.map((tenant, i) => {
 						return (
 							<div className="dashboard_card" key={i}>
