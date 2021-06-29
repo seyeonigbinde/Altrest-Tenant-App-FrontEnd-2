@@ -3,15 +3,15 @@ import { axiosWithAuth } from '../utils/axiosWithAuth'
 
 const TenantList = () => {
 
-	const [tenant, setTenant] = useState([]);
+	const [tenant, setTenant] = useState([])
 
 	useEffect(() => {
 		axiosWithAuth().get("/tenants")
 			.then(res => {
-				setTenant(res.data);
+				setTenant(res.data)
 			})
 			.catch(err => {
-				console.log(err);
+				console.log(err)
 			})
 	})
 
@@ -30,13 +30,12 @@ const TenantList = () => {
                                 <p><b>Phone Number:</b> {tenant.tenant_phone}</p>
                                 <p><b>Occupation:</b> {tenant.tenant_occupation}</p>
 							</div>
-						);
+						)
 					})}
 				</div>
 			</section>
 		</>
-	);
-
+	)
 }
 
-export default TenantList;
+export default TenantList

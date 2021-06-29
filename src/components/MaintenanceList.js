@@ -4,9 +4,9 @@ import { useHistory } from 'react-router-dom'
 
 const MaintenanceList = () => {
 
-	const [maintenance, setMaintenance] = useState([]);
+	const [maintenance, setMaintenance] = useState([])
 
-	const { push } = useHistory();
+	const { push } = useHistory()
 
 	useEffect(() => {
 		axiosWithAuth().get("/maintenance")
@@ -21,12 +21,12 @@ const MaintenanceList = () => {
 	const handleDeleteClick = () => {
 		axiosWithAuth().delete(`/maintenance`)
 			.then(res => {
-				setMaintenance(res.data);
-				push('/dashboard');
+				setMaintenance(res.data)
+				push('/dashboard')
 				console.log(res.data)
 			})
 			.catch(err => {
-				console.log(err);
+				console.log(err)
 			})
 	}
 
@@ -55,13 +55,12 @@ const MaintenanceList = () => {
                         Clear Completed
                         </button> */}
 							</div>
-						);
+						)
 					})}
 				</div>
 			</section>
 		</>
-	);
-
+	)
 }
 
-export default MaintenanceList;
+export default MaintenanceList

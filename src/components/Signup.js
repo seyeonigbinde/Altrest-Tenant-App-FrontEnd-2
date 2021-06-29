@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { useHistory, Link } from 'react-router-dom';
-import * as yup from 'yup';
-import formSchema from '../utils/formSchema';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react'
+import { useHistory, Link } from 'react-router-dom'
+import * as yup from 'yup'
+import formSchema from '../utils/formSchema'
+import axios from 'axios'
 
-import altrestlogo2 from '../images/altrestlogo2.png';
-import DashFooter from './DashFooter';
+import altrestlogo2 from '../images/altrestlogo2.png'
+import DashFooter from './DashFooter'
 
 const initialFormValues = {
   firstName: '',
@@ -88,7 +88,7 @@ const Signup = () => {
         </div>
       </header>
       <section className="form_section">
-        <h1>Create Account</h1><br />
+        <h1>Create An Account</h1><br />
         <form onSubmit={handleSubmit}>
           <div className="form-group form-label mt-3">
             <label htmlFor="firstName">First Name:</label>
@@ -181,7 +181,4 @@ const Signup = () => {
   );
 }
 
-export default Signup;
-
-
-
+export default Signup

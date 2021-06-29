@@ -1,9 +1,9 @@
-import axios from "axios";
-import React, { useState } from "react";
-import { useHistory, Link } from 'react-router-dom';
+import axios from "axios"
+import React, { useState } from "react"
+import { useHistory, Link } from 'react-router-dom'
 
-import altrestlogo2 from '../images/altrestlogo2.png';
-import DashFooter from "./DashFooter";
+import altrestlogo2 from '../images/altrestlogo2.png'
+import DashFooter from "./DashFooter"
 
 const credentials = {
   email: "",
@@ -11,7 +11,7 @@ const credentials = {
 }
 const Login = () => {
 
-  const { push } = useHistory();
+  const { push } = useHistory()
 
   const [userLogin, setUserLogin] = useState(credentials)
 
@@ -19,28 +19,27 @@ const Login = () => {
     setUserLogin({
       ...userLogin,
       [e.target.name]: e.target.value
-    });
-  };
+    })
+  }
 
   const login = e => {
-    e.preventDefault();
+    e.preventDefault()
     const newUser = {
       email: userLogin.email.trim(),
       password: userLogin.password.trim(),
     }
     axios.post('https://altrest-app.herokuapp.com/api/auth/login', newUser)
       .then(res => {
-        localStorage.setItem("token", res.data.token);
-        push('/dashboard');
+        localStorage.setItem("token", res.data.token)
+        push('/dashboard')
         console.log(res)
       })
       .catch(err => {
-        console.log(err);
-      });
-  };
+        console.log(err)
+      })
+  }
 
   const error = ""
-  // ((userLogin.username === "") || (userLogin.password === "")) &&  "Username or Password not valid" 
 
   return (
     <section>
@@ -86,7 +85,7 @@ const Login = () => {
       <p className="signup_login"> Don't have an account? <Link to="/signup">Register</Link></p>
       <DashFooter/>
     </section>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

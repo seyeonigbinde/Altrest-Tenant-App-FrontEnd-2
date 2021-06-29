@@ -3,15 +3,15 @@ import { axiosWithAuth } from '../utils/axiosWithAuth'
 
 const UserProfile = () => {
 
-	const [profile, setProfile] = useState([]);
+	const [profile, setProfile] = useState([])
 
 	useEffect(() => {
 		axiosWithAuth().get("/users")
 			.then(res => {
-				setProfile(res.data);
+				setProfile(res.data)
 			})
 			.catch(err => {
-				console.log(err);
+				console.log(err)
 			})
 	})
 
@@ -34,13 +34,12 @@ const UserProfile = () => {
                                <p><b>Location:</b> {user.location}</p>
                            </div>
                            </>
-						);
+						)
 					})}
 				</div>
 			</section>
 		</>
-	);
-
+	)
 }
 
-export default UserProfile;
+export default UserProfile

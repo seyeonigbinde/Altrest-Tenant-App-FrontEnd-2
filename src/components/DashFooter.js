@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 
 const DashFooter = () => {
@@ -20,4 +20,4 @@ const DashFooter = () => {
     )
 }
 
-export default DashFooter;
+export default DashFooter

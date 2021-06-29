@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom'
 const Dashboard_Home = () => {
 
     const [user, setUser] = useState([]);
-
-	// const { id } = useParams();
    
 	useEffect(() => {
 		axiosWithAuth().get(`/users`)
@@ -36,11 +34,8 @@ const Dashboard_Home = () => {
 					</div>
 				</div>
 			</section>
-
-        </>
-
-        
+        </> 
     )
 }
 
-export default Dashboard_Home;
+export default Dashboard_Home

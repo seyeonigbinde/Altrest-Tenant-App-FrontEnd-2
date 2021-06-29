@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
-import * as yup from 'yup';
-import tenantSchema from '.././utils/tenantSchema';
+import React, { useState, useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
+import * as yup from 'yup'
+import tenantSchema from '.././utils/tenantSchema'
 
-import { axiosWithAuth } from '../utils/axiosWithAuth';
+import { axiosWithAuth } from '../utils/axiosWithAuth'
 
 const initialFormValues = {
   apartment: '',
@@ -107,7 +107,7 @@ const AddTenant = () => {
         </form>
       </section>
     </section>
-  );
+  )
 }
 
-export default AddTenant;
+export default AddTenant

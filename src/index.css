@@ -122,6 +122,9 @@ header{
   color: #4f4f4f;
   align-items: center;
 }
+.middlepage h2{
+  color: #185adb;
+}
 .services_items{
   width: 40%;
 }
@@ -144,8 +147,8 @@ header{
 	justify-content: space-evenly;
 	margin: 0% 2%;
   line-height: 1.5;
-  height: 30vh;
   margin-bottom: 3%;
+  padding-bottom: 5%;
 }
 .howitworks div{
 	width: 18%;
@@ -235,6 +238,28 @@ font-size: .8rem;
   width:100%;
   border-radius: 5px;
   margin-bottom: 20%;
+}
+.newsletter{
+  background-color: #185adb;
+  padding: 5% 2%;
+  border-radius: 10px;
+  width: 80%;
+  color: #fff;
+  margin-top: 3%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter h3{
+  padding: 1% 0;
+}
+.newsletter_content{
+  width: 50%;
+}
+.newsletter_button{
+  width: 40%;
+  text-align: center;
+  color: #185adb;
 }
 .the_dashboard{
   display: flex;
@@ -397,11 +422,15 @@ footer p{
   }
   .top_content{
     width:95%;
+    padding-bottom: 5%;
   }
   .top_image{
     display: none;
   }
   .body_image{
+    display: none;
+  }
+  .middlepage button{
     display: none;
   }
   .services_items{
@@ -416,10 +445,11 @@ footer p{
   .howitworks{
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top:9%
+    margin-top:9%;
   }
   .howitworks div{
-    width: 23%;
+    width: 50%;
+    margin: 0 25%;
   }
   .the_dashboard_links{
     display: none;
@@ -463,17 +493,24 @@ padding: 4% 2%;
   font-size: 0.7rem;
 }
 
-.howitworks-container{
-display: none;
-}
 .howitworks div{
-  width: 23%;
+  width: 75%;
+  margin: 0 11%;
+}
+.howitworks h3{
+  font-size: 1.5rem;
+}
+.howitworks-header h2{
+  font-size: 1.9rem;
 }
 .about_vision{
   width:90%;
 }
 .aboutimg{
   height: 20vh;
+}
+.newsletter{
+  display: none;
 }
 .list-group-item{
   font-size: 0.9rem;

@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react'
 
-import { axiosWithAuth } from './../utils/axiosWithAuth';
-import { useParams  } from 'react-router-dom';
-import Dashboard from './Dashboard';
+import { axiosWithAuth } from './../utils/axiosWithAuth'
+import { useParams  } from 'react-router-dom'
+import Dashboard from './Dashboard'
 
 const Maintenance = () => {
-
 
     const [maintenance, setMaintenance] = useState([])
 
@@ -20,7 +19,7 @@ const Maintenance = () => {
         .catch(err => {
         console.log(err)
     })
-    }, [id] );
+    }, [id] )
 
     return (
         <>
@@ -35,11 +34,8 @@ const Maintenance = () => {
                     <h3>Request: {maintenance.request}</h3>
                     </div>
                 </div> */}
-
         </>
-
-        
     )
 }
 
-export default Maintenance;
+export default Maintenance

@@ -3,15 +3,15 @@ import { axiosWithAuth } from '../utils/axiosWithAuth'
 
 const PropertyList = () => {
 
-	const [property, setProperty] = useState([]);
+	const [property, setProperty] = useState([])
 
 	useEffect(() => {
 		axiosWithAuth().get("/property")
 			.then(res => {
-				setProperty(res.data);
+				setProperty(res.data)
 			})
 			.catch(err => {
-				console.log(err);
+				console.log(err)
 			})
 	})
 
@@ -29,7 +29,7 @@ const PropertyList = () => {
                                 {property.property_city}, 
                                 {property.property_state} State</p>
 							</div>
-						);
+						)
 					})}
 				</div>
 			</section>
@@ -38,4 +38,4 @@ const PropertyList = () => {
 
 }
 
-export default PropertyList;
+export default PropertyList

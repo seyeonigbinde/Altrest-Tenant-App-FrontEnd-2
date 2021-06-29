@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { useHistory, Link } from 'react-router-dom';
-import * as yup from 'yup';
-import maintenanceSchema from '../utils/maintenanceSchema';
+import React, { useState, useEffect } from 'react'
+import { useHistory, Link } from 'react-router-dom'
+import * as yup from 'yup'
+import maintenanceSchema from '../utils/maintenanceSchema'
 import { axiosWithAuth }from '../utils/axiosWithAuth'
 
 
@@ -68,16 +68,6 @@ const MaintenanceForm = () => {
             })
     }
 
-    // const logOut = () => {
-    //     axiosWithAuth().post('/logout')
-    //     .then(()=> {
-    //       localStorage.removeItem("token");
-    //       window.location.href = "/";
-    //     })
-    //     .catch(err=> {
-    //       console.log(err);
-    //     })
-    //   };
 
     return (
         <section>
@@ -117,4 +107,4 @@ const MaintenanceForm = () => {
     )
 }
 
-export default MaintenanceForm;
+export default MaintenanceForm

@@ -1,26 +1,26 @@
-import React from 'react';
-import altrestlogo2 from '../images/altrestlogo2.png';
-import { Route, Switch, Link } from "react-router-dom";
+import React from 'react'
+import altrestlogo2 from '../images/altrestlogo2.png'
+import { Route, Switch, Link } from "react-router-dom"
 // import { axiosWithAuth }from '../utils/axiosWithAuth'
 
 import Maintenance from './Maintenance'
 import MaintenanceForm from './MaintenanceForm'
 import MaintenanceList from './MaintenanceList'
-import DashFooter from './DashFooter';
-import Dashboard_Home from './Dashboard_Home';
-import PropertyForm from './PropertyForm';
-import AddTenant from './AddTenant';
-import TenantList from './TenantList';
-import PropertyList from './PropertyList';
-import UserProfile from './UserProfile';
+import DashFooter from './DashFooter'
+import Dashboard_Home from './Dashboard_Home'
+import PropertyForm from './PropertyForm'
+import AddTenant from './AddTenant'
+import TenantList from './TenantList'
+import PropertyList from './PropertyList'
+import UserProfile from './UserProfile'
 
 const Dashboard = () => {
 
     const logOut = () => {
         // axiosWithAuth().post('/logout')
         // .then(()=> {
-        localStorage.removeItem("token");
-        window.location.href = "/";
+        localStorage.removeItem("token")
+        window.location.href = "/"
         // })
         // .catch(err=> {
         //   console.log(err);
@@ -203,4 +203,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard;
+export default Dashboard
