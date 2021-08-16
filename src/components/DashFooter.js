@@ -5,7 +5,7 @@ const DashFooter = () => {
 
     return (
         <footer>
-            <hr/>
+            <hr />
             <section className="footer_note" >
                 <div className="footer_copyright">
                     <p>Copyright &copy; 2021 || Designed by Stevens Design Tech.</p>

@@ -83,7 +83,7 @@ const Login = () => {
         <p data-testid="errorMessage" className="error">{error}</p>
       </div>
       <p className="signup_login"> Don't have an account? <Link to="/signup">Register</Link></p>
-      <DashFooter/>
+      <DashFooter />
     </section>
   )
 }

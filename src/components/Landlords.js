@@ -70,7 +70,7 @@ const Landlords = () => {
                     <img src={landlord_1} alt="features_pix" />
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </section>
     )
 }

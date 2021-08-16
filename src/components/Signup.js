@@ -112,7 +112,7 @@ const Signup = () => {
           <p className='errors'>{formErrors.phone}</p>
           <div className="form-group form-label mt-3">
             <label htmlFor="email">Address:</label>
-            <textarea className="form-control" onChange={handleChange} value={formValues.address} name="address"  rows="2" id="address" placeholder="House Address" />
+            <textarea className="form-control" onChange={handleChange} value={formValues.address} name="address" rows="2" id="address" placeholder="House Address" />
           </div>
           <p className='errors'>{formErrors.address}</p>
           <div className="form-group mt-3">
@@ -176,7 +176,7 @@ const Signup = () => {
         </form><br />
         <p className="signup_login"> Already have an account? <Link to="/login">Login</Link></p>
       </section>
-      <DashFooter/>
+      <DashFooter />
     </section>
   );
 }

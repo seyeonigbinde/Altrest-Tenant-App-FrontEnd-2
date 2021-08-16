@@ -14,11 +14,11 @@ const initialFormValues = {
 }
 
 const initialFormErrors = {
-    apartment: '',
-    tenant_name: '',
-    tenant_email: '',
-    tenant_phone: '',
-    tenant_occupation: '',
+  apartment: '',
+  tenant_name: '',
+  tenant_email: '',
+  tenant_phone: '',
+  tenant_occupation: '',
 }
 
 const AddTenant = () => {

@@ -58,7 +58,7 @@ const About = () => {
                     <b>Safety</b> - We have created a secured and safe environment for our clients to transact while we hold our loyal customers with high esteem and reward them accordingly.
             </p>
             </div>
-            <Footer/>
+            <Footer />
         </section>
     )
 }

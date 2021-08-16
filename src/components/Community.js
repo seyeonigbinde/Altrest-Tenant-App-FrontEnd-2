@@ -70,7 +70,7 @@ const Community = () => {
                     <img src={community_2} alt="features_pix" />
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </section>
     )
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useHistory, Link } from 'react-router-dom'
 import * as yup from 'yup'
 import maintenanceSchema from '../utils/maintenanceSchema'
-import { axiosWithAuth }from '../utils/axiosWithAuth'
+import { axiosWithAuth } from '../utils/axiosWithAuth'
 
 
 const initialFormValues = {
@@ -85,8 +85,8 @@ const MaintenanceForm = () => {
                     </div>
                     <p className='errors'>{formErrors.request}</p>
                     <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="inputGroupFile02" onChange={handleChange} value={formValues.request_image} name="request_image"/>
-                            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                        <input type="file" class="form-control" id="inputGroupFile02" onChange={handleChange} value={formValues.request_image} name="request_image" />
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
                     </div>
                     <p className='errors'>{formErrors.request_image}</p>
                     <div className="form-group mt-3">
@@ -100,7 +100,7 @@ const MaintenanceForm = () => {
                     </div>
                     <br />
                     <button disabled={disabled} >Submit a Maintenance Request</button> <></>
-                    <Link to={'/dashboard'}><button className="btn btn-secondary"  type="button"  value="Cancel"> Cancel </button></Link>
+                    <Link to={'/dashboard'}><button className="btn btn-secondary" type="button" value="Cancel"> Cancel </button></Link>
                 </form><br />
             </section>
         </section>

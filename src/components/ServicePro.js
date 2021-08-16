@@ -71,7 +71,7 @@ const ServicePro = () => {
                     <img src={servicepro_2} alt="features_pix" />
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </section>
     )
 }

@@ -13,10 +13,10 @@ const initialFormValues = {
 }
 
 const initialFormErrors = {
-    owner: '',
-    property_address: '',
-    property_city: '',
-    property_state: '',
+  owner: '',
+  property_address: '',
+  property_city: '',
+  property_state: '',
 }
 
 const PropertyForm = () => {

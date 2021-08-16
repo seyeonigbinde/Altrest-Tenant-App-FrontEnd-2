@@ -20,15 +20,15 @@ const TenantList = () => {
 		<>
 			<section>
 				<div className="dashboard_container">
-                <h4>My Tenants</h4>
+					<h4>My Tenants</h4>
 					{tenant.map((tenant, i) => {
 						return (
 							<div className="dashboard_card" key={i}>
 								<p><b>Apartment No:</b> {tenant.apartment}</p>
 								<p><b>Tenant Name:</b> {tenant.tenant_name}</p>
-                                <p><b>Email Address:</b> {tenant.tenant_email}</p>
-                                <p><b>Phone Number:</b> {tenant.tenant_phone}</p>
-                                <p><b>Occupation:</b> {tenant.tenant_occupation}</p>
+								<p><b>Email Address:</b> {tenant.tenant_email}</p>
+								<p><b>Phone Number:</b> {tenant.tenant_phone}</p>
+								<p><b>Occupation:</b> {tenant.tenant_occupation}</p>
 							</div>
 						)
 					})}

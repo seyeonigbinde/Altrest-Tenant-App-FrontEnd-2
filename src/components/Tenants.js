@@ -63,7 +63,7 @@ const Tenants = () => {
                     <img src={tenant_1} alt="features_pix" />
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </section>
     )
 }

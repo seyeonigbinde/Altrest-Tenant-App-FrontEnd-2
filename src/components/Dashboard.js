@@ -69,7 +69,7 @@ const Dashboard = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/dashboard/maintenancerequest'  className="nav-link text-dark">
+                                <Link to='/dashboard/maintenancerequest' className="nav-link text-dark">
                                     <svg className="bi me-2" width="16" height="16"><use xlinkHref="#grid" /></svg>
                                     Add Request
                                 </Link>
@@ -122,7 +122,7 @@ const Dashboard = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link  to='/dashboard/addproperty' class="nav-link py-3 border-bottom" title=" My Property" data-bs-toggle="tooltip" data-bs-placement="right">
+                                <Link to='/dashboard/addproperty' class="nav-link py-3 border-bottom" title=" My Property" data-bs-toggle="tooltip" data-bs-placement="right">
                                     <svg class="bi" width="24" height="24"><use xlinkHref="#speedometer2" /></svg>
                                 </Link>
                             </li>
@@ -169,10 +169,10 @@ const Dashboard = () => {
                 <section className="the_dashboard_content">
                     <Switch>
                         <Route exact path='/dashboard'>
-                            <Dashboard_Home/>
+                            <Dashboard_Home />
                         </Route>
                         <Route exact path='/dashboard/request'>
-                            <MaintenanceList/>
+                            <MaintenanceList />
                         </Route>
                         <Route path='/dashboard/maintenance'>
                             <Maintenance />
