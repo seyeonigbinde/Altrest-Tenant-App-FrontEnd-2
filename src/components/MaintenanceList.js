@@ -41,8 +41,8 @@ const MaintenanceList = () => {
 	return (
 		<>
 			<section>
+			<h4>Tenants Requests</h4>
 				<div className="dashboard_container">
-					<h4>Tenants Requests</h4>
 					{maintenance.map((maintain, i) => {
 						return (
 							<div className="dashboard_card" key={i}>

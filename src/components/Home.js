@@ -1,45 +1,20 @@
 import React from 'react'
-import altrestlogo2 from '../images/altrestlogo2.png'
 import top_img_1 from '../images/top_img_1.jpeg'
 import banner_image from '../images/banner_image.png'
 import features_1 from '../images/features_1.jpeg'
 import community_2 from '../images/community_2.jpeg'
-import features_3 from '../images/features_3.jpeg'
+import servicepro_2 from '../images/servicepro_2.jpeg'
 import * as Icon from 'react-bootstrap-icons'
 import { Link } from "react-router-dom"
 import Footer from './Footer'
+import Header from './Header'
 
 
 const Home = () => {
 
     return (
         <>
-            <header>
-                <div className="logo">
-                    <Link to='/'><img src={altrestlogo2} alt="logo" /></Link>
-                </div>
-                <div className="links">
-                    <Link>
-                        <ul className="nav nav-tabs w-100 ">
-                            <li className="nav-item dropdown w-100">
-                                <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><b>Products</b></Link>
-                                <ul className="dropdown-menu p-2">
-                                    <li><Link className="dropdown-item p-3" to='/landlords'>Landlords</Link></li>
-                                    <li><Link className="dropdown-item p-3" to='/tenants'>Tenants</Link></li>
-                                    <li><Link className="dropdown-item p-3" to='/community'>Community Associations</Link></li>
-                                    <li><Link className="dropdown-item p-3" to='/serviceprovider'>Service Providers</Link></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </Link>
-                    <Link><b>Pricing</b></Link>
-                    <Link to='/about'><b>Company</b></Link>
-
-                </div>
-                <div className="login">
-                    <Link to='/login'><button className="btn btn-primary">Login</button></Link>
-                </div>
-            </header>
+            <Header />
             <section className="homepage">
                 <div className="top_content">
                     <h1><strong>ALTREST Tenant Management App</strong></h1><br />
@@ -113,7 +88,7 @@ const Home = () => {
                     <Link to='/signup'> <button className=" btn btn-primary">Get Started</button></Link>
                 </div>
                 <div className="body_image">
-                    <img src={features_3} alt="top_image" />
+                    <img src={servicepro_2} alt="top_image" />
                 </div>
             </section>
             <section className="newsletter">
@@ -122,7 +97,7 @@ const Home = () => {
                     <p>Join our newsletter and get the latest real estate insights delivered straight to your inbox</p>
                 </div>
                 <div className="newsletter_button">
-                    <Link> <button className=" btn btn-lg bg-white">Sign up</button></Link>
+                    <Link to='/signup'> <button className=" btn btn-lg bg-white">Sign up</button></Link>
                 </div>
             </section>
             <div className="howitworks-container">

@@ -64,7 +64,7 @@ const AddTenant = () => {
     axiosWithAuth().post('https://altrest-app.herokuapp.com/api/tenants', newTenant)
       .then(res => {
         console.log(res)
-        push('/tenantlist')
+        push('/dashboard/tenantlist')
       })
       .catch(err => {
         console.log(err)

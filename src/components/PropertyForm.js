@@ -61,7 +61,7 @@ const PropertyForm = () => {
     axiosWithAuth().post('https://altrest-app.herokuapp.com/api/property', newProperty)
       .then(res => {
         console.log(res)
-        push('/propertylist')
+        push('/dashboard/propertylist')
       })
       .catch(err => {
         console.log(err)

@@ -1,41 +1,16 @@
 import React from 'react'
-import altrestlogo2 from '../images/altrestlogo2.png';
 import banner_image from '../images/banner_image.png'
 import community_1 from '../images/community_1.jpeg'
 import community_2 from '../images/community_2.jpeg'
 import { Link } from "react-router-dom"
 import Footer from './Footer'
+import Header from './Header';
 
 const Community = () => {
 
     return (
         <section>
-            <header>
-                <div className="logo">
-                    <Link to='/'><img src={altrestlogo2} alt="logo" /></Link>
-                </div>
-                <div className="links">
-                    <Link>
-                        <ul className="nav nav-tabs w-100 ">
-                            <li className="nav-item dropdown w-100">
-                                <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><b>Products</b></Link>
-                                <ul className="dropdown-menu p-2">
-                                    <li><Link className="dropdown-item p-3" to='/landlords'>Landlords</Link></li>
-                                    <li><Link className="dropdown-item p-3" to='/tenants'>Tenants</Link></li>
-                                    <li><Link className="dropdown-item p-3" to='/community'>Community Associations</Link></li>
-                                    <li><Link className="dropdown-item p-3" to='/serviceprovider'>Service Providers</Link></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </Link>
-                    <Link><b>Pricing</b></Link>
-                    <Link to='/about'><b>Company</b></Link>
-
-                </div>
-                <div className="login">
-                    <Link to='/login'><button className="btn btn-primary">Login</button></Link>
-                </div>
-            </header>
+            <Header/>
             <section className="features_banner">
                 <div className="features_content">
                     <h1><strong>Community Association</strong></h1><br /><br />

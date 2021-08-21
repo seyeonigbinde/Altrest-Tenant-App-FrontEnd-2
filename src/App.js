@@ -14,16 +14,18 @@ import ServicePro from './components/ServicePro'
 import Dashboard from './components/Dashboard'
 import MaintenanceForm from './components/MaintenanceForm'
 import Maintenance from './components/Maintenance'
+import Pricing from './components/Pricing'
+
 
 
 function App() {
   return (
     <div className="App">
-  
+
       <Switch>
         <PrivateRoute path='/dashboard' component={Dashboard} />
         <Route path='/maintenance'>
-          <Maintenance/>
+          <Maintenance />
         </Route>
         <Route path='/maintenanceform'>
           <MaintenanceForm />
@@ -43,6 +45,9 @@ function App() {
         <Route path='/about'>
           <About />
         </Route>
+        <Route path='/pricing'>
+          <Pricing />
+        </Route>
         <Route path='/login'>
           <Login />
         </Route>
@@ -53,7 +58,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
-     
+
     </div>
   )
 }
