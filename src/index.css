@@ -412,6 +412,12 @@ footer{
   text-align: center;
   padding: 1% 0;
 }
+.footer_copyright a{
+  color: #fff;
+}
+.footer_copyright a:hover{
+  color: #ccc;
+}
 .footer_socials{
   display: flex;
   justify-content: space-between;
