@@ -5,7 +5,6 @@ import { Link } from "react-router-dom"
 const Footer = () => {
 
 
-
     return (
         <footer>
             <section className="footer_container">
@@ -41,7 +40,7 @@ const Footer = () => {
             </section>
             <hr />
             <section className="footer_copyright">
-                <p>Copyright &copy; 2021 || Designed by Stevens Design Tech.</p>
+                <p>Copyright &copy; 2021 || Designed by <a href="https://seyeonigbinde.vercel.app/">Stevens Design Tech.</a></p>
             </section>
         </footer>
     )

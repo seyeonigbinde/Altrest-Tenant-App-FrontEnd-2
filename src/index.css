@@ -34,6 +34,9 @@ h2{
 h3{
   font-size: 1.4rem;
 }
+h4{
+  font-size: 1.2rem;
+}
 p{
   font-size: 1rem;
 }
@@ -402,6 +405,9 @@ footer{
   flex-direction: column;
   color: #ccc;
 }
+.footer_items a:hover{
+  color: #fff;
+}
 .footer_copyright{
   text-align: center;
   padding: 1% 0;
@@ -414,14 +420,29 @@ footer{
   padding: 2% 0;
   margin: 14% 14%;
 }
-
+.dash_footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dash_copyright{
+  text-align: center;
+  padding: 1% 0;
+  width: 75%;
+}
+.dash_socials{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 20%;
+  padding: 1% 0;
+  margin: 1% 1%;
+}
 
 @media screen and (max-width: 900px) {
   .logo{
     width: 21%;  
-  }
-  .footer_links{
-    /* display: none; */
   }
   .features_portrait{
     display: none;
