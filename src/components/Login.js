@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { useHistory, Link } from 'react-router-dom'
 
 import altrestlogo2 from '../images/altrestlogo2.png'
-import DashFooter from './DashFooter'
 
 const credentials = {
   email: '',
