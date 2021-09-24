@@ -376,6 +376,9 @@ header {
 .the_dashboard_content {
   width: 75%;
 }
+.dashboard_top {
+  margin-top: 5%;
+}
 .dashboard_container {
   display: flex;
   justify-content: space-between;

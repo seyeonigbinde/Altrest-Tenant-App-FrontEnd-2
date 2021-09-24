@@ -17,7 +17,7 @@ const PropertyList = () => {
 
   return (
     <>
-      <section>
+      <section className='dashboard_top'>
         <h4>My Property</h4>
         <div className='dashboard_container'>
           {property.map((property, i) => {
