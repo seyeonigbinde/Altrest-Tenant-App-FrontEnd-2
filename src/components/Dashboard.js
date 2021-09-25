@@ -67,7 +67,7 @@ const Dashboard = () => {
                   className='nav-link text-dark'
                 >
                   <svg className='bi me-2' width='16' height='16'>
-                    <use xlinkHref='#speedometer2' />
+                    <use xlinkHref='#home' />
                   </svg>
                   Add Property
                 </Link>
@@ -97,7 +97,7 @@ const Dashboard = () => {
                   className='nav-link text-dark'
                 >
                   <svg className='bi me-2' width='16' height='16'>
-                    <use xlinkHref='#people-circle' />
+                    <use xlinkHref='#home' />
                   </svg>
                   My Property
                 </Link>
@@ -105,7 +105,7 @@ const Dashboard = () => {
               <li>
                 <Link to='/dashboard/tenantlist' className='nav-link text-dark'>
                   <svg className='bi me-2' width='16' height='16'>
-                    <use xlinkHref='#cpu-fill' />
+                    <use xlinkHref='#collection' />
                   </svg>
                   My Tenants
                 </Link>
@@ -113,7 +113,7 @@ const Dashboard = () => {
               <li>
                 <Link to='/dashboard/request' className='nav-link text-dark'>
                   <svg className='bi me-2' width='16' height='16'>
-                    <use xlinkHref='#tools' />
+                    <use xlinkHref='#grid' />
                   </svg>
                   My Requests
                 </Link>
@@ -209,7 +209,7 @@ const Dashboard = () => {
                   data-bs-placement='right'
                 >
                   <svg class='bi' width='24' height='24'>
-                    <use xlinkHref='#speedometer2' />
+                    <use xlinkHref='#home' />
                   </svg>
                 </Link>
               </li>
@@ -248,7 +248,7 @@ const Dashboard = () => {
                   data-bs-placement='right'
                 >
                   <svg class='bi' width='24' height='24'>
-                    <use xlinkHref='#toggles2' />
+                    <use xlinkHref='#home' />
                   </svg>
                 </Link>
               </li>
@@ -261,7 +261,7 @@ const Dashboard = () => {
                   data-bs-placement='right'
                 >
                   <svg class='bi' width='24' height='24'>
-                    <use xlinkHref='#cpu-fill' />
+                    <use xlinkHref='#collection' />
                   </svg>
                 </Link>
               </li>
@@ -274,7 +274,7 @@ const Dashboard = () => {
                   data-bs-placement='right'
                 >
                   <svg class='bi' width='24' height='24'>
-                    <use xlinkHref='#chat-quote-fill' />
+                    <use xlinkHref='#grid' />
                   </svg>
                 </Link>
               </li>
