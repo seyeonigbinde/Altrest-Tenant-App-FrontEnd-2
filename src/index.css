@@ -181,6 +181,9 @@ header {
   color: #4f4f4f;
   align-items: center;
 }
+.middlepage_mobile {
+  display: none;
+}
 .middlepage h2 {
   color: #185adb;
 }
@@ -545,9 +548,13 @@ footer {
   p {
     font-size: 0.8rem;
   }
+  .homepage {
+    margin-bottom: 10%;
+  }
   .top_content {
     width: 95%;
     padding-bottom: 5%;
+    margin-top: 25%;
   }
   .top_image {
     display: none;
@@ -557,8 +564,11 @@ footer {
     width: 95%;
     flex-wrap: wrap;
   }
-  .middlepage button {
+  .middlepage {
     display: none;
+  }
+  .middlepage_mobile {
+    display: inline;
   }
   .services_items {
     width: 95%;
