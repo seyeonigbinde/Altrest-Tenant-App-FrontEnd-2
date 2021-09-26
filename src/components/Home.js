@@ -165,10 +165,10 @@ const Home = () => {
       <section className='middlepage_mobile'>
         <div className='services_items'>
           <h2>Landlords</h2>
-          <br />
           <div className='body_image'>
             <img src={features_1} alt='features_pix' />
           </div>
+          <br />
           <ul class='list-group list-group-flush text-start'>
             <li class='list-group-item p-3'>
               {' '}
@@ -192,7 +192,6 @@ const Home = () => {
       <section className='middlepage_mobile'>
         <div className='services_items'>
           <h2>Tenants</h2>
-          <br />
           <div className='body_image'>
             <img src={top_img_1} alt='top_image' />
           </div>
@@ -213,7 +212,6 @@ const Home = () => {
       <section className='middlepage_mobile'>
         <div className='services_items'>
           <h2>Community Associations</h2>
-          <br />
           <div className='body_image'>
             <img src={community_2} alt='top_image' />
           </div>
@@ -242,7 +240,6 @@ const Home = () => {
       <section className='middlepage_mobile'>
         <div className='services_items'>
           <h2>Service Providers</h2>
-          <br />
           <div className='body_image'>
             <img src={servicepro_2} alt='top_image' />
           </div>
