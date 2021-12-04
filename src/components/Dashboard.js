@@ -1,22 +1,22 @@
-import React from 'react'
-import altrestlogo2 from '../images/altrestlogo2.png'
-import { Route, Switch, Link } from 'react-router-dom'
+import React from "react"
+import altrestlogo2 from "../images/altrestlogo2.png"
+import { Route, Switch, Link } from "react-router-dom"
 
-import Maintenance from './Maintenance'
-import MaintenanceForm from './MaintenanceForm'
-import MaintenanceList from './MaintenanceList'
-import DashFooter from './DashFooter'
-import Dashboard_Home from './Dashboard_Home'
-import PropertyForm from './PropertyForm'
-import AddTenant from './AddTenant'
-import TenantList from './TenantList'
-import PropertyList from './PropertyList'
-import UserProfile from './UserProfile'
+import Maintenance from "./Maintenance"
+import MaintenanceForm from "./MaintenanceForm"
+import MaintenanceList from "./MaintenanceList"
+import DashFooter from "./DashFooter"
+import Dashboard_Home from "./Dashboard_Home"
+import PropertyForm from "./PropertyForm"
+import AddTenant from "./AddTenant"
+import TenantList from "./TenantList"
+import PropertyList from "./PropertyList"
+import UserProfile from "./UserProfile"
 
 const Dashboard = () => {
   const logOut = () => {
-    localStorage.removeItem('token')
-    window.location.href = '/'
+    localStorage.removeItem("token")
+    window.location.href = "/"
   }
 
   return (
@@ -27,13 +27,6 @@ const Dashboard = () => {
             <img src={altrestlogo2} alt='logo' />
           </Link>
         </div>
-        {/* <div className="links">
-                    <Link><b>Make Payment</b></Link>
-                    <Link to='/maintenanceform'><b>Add Request</b></Link>
-                </div>
-                <div className="login">
-                    <button className="btn btn-primary" onClick={logOut}>Logout</button>
-                </div> */}
       </header>
       <section className='the_dashboard'>
         <section className='the_dashboard_links'>
@@ -166,7 +159,7 @@ const Dashboard = () => {
         <section className='the_dashboard_links2'>
           <div
             class='d-flex flex-column flex-shrink-0 bg-light'
-            style={{ width: 4.5 + 'rem' }}
+            style={{ width: 4.5 + "rem" }}
           >
             <Link
               class='d-block p-3 link-dark text-decoration-none'

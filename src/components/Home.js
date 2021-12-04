@@ -1,20 +1,18 @@
-import React from 'react'
-import top_img_1 from '../images/top_img_1.jpeg'
-import banner_image from '../images/banner_image.png'
-import features_1 from '../images/features_1.jpeg'
-import community_2 from '../images/community_2.jpeg'
-import servicepro_2 from '../images/servicepro_2.jpeg'
-import * as Icon from 'react-bootstrap-icons'
-import { Link } from 'react-router-dom'
-import Footer from './Footer'
-import Header from './Header'
+import React from "react"
+import top_img_1 from "../images/top_img_1.jpeg"
+import banner_image from "../images/banner_image.png"
+import features_1 from "../images/features_1.jpeg"
+import community_2 from "../images/community_2.jpeg"
+import servicepro_2 from "../images/servicepro_2.jpeg"
+import * as Icon from "react-bootstrap-icons"
+import { Link } from "react-router-dom"
+import Footer from "./Footer"
+import Header from "./Header"
 
 const Home = () => {
   return (
     <>
       <Header />
-
-      {/* Banner */}
       <section className='homepage'>
         <div className='top_content'>
           <h1>
@@ -24,7 +22,7 @@ const Home = () => {
           <p>
             <b>ALTREST </b>is a digital facility management App that helps
             tenants and landlords manage communications, maintenance requests
-            and payments.{' '}
+            and payments.{" "}
           </p>
           <br />
           <Link to='/signup'>
@@ -35,8 +33,6 @@ const Home = () => {
           <img src={banner_image} alt='top_image' />
         </div>
       </section>
-
-      {/* Features */}
       <section className='middlepage'>
         <div className='body_image'>
           <img src={features_1} alt='features_pix' />
@@ -46,7 +42,7 @@ const Home = () => {
           <br />
           <ul class='list-group list-group-flush text-start'>
             <li class='list-group-item p-3'>
-              {' '}
+              {" "}
               <Icon.Check2Square /> Manage Maintenance Request
             </li>
             <li class='list-group-item p-3'>
@@ -74,7 +70,6 @@ const Home = () => {
           <br />
           <ul class='list-group list-group-flush text-start'>
             <li class='list-group-item p-3'>
-              {' '}
               <Icon.Check2Square /> Online Maintenance Request
             </li>
             <li class='list-group-item p-3'>
@@ -86,7 +81,6 @@ const Home = () => {
           </ul>
           <br />
           <Link to='/signup'>
-            {' '}
             <button className=' btn btn-primary'>Get Started</button>
           </Link>
         </div>
@@ -103,7 +97,6 @@ const Home = () => {
           <br />
           <ul class='list-group list-group-flush text-start'>
             <li class='list-group-item p-3'>
-              {' '}
               <Icon.Check2Square /> Communication with Home Ownwers and
               Non-owner Residents
             </li>
@@ -118,12 +111,11 @@ const Home = () => {
               <Icon.Check2Square /> Violation Reports
             </li>
             <li class='list-group-item p-3'>
-              <Icon.Check2Square /> Community Announcements{' '}
+              <Icon.Check2Square /> Community Announcements{" "}
             </li>
           </ul>
           <br />
           <Link to='/signup'>
-            {' '}
             <button className=' btn btn-primary'>Get Started</button>
           </Link>
         </div>
@@ -134,7 +126,6 @@ const Home = () => {
           <br />
           <ul class='list-group list-group-flush text-start'>
             <li class='list-group-item p-3'>
-              {' '}
               <Icon.Check2Square /> Manage Invoices
             </li>
             <li class='list-group-item p-3'>
@@ -152,7 +143,6 @@ const Home = () => {
           </ul>
           <br />
           <Link to='/signup'>
-            {' '}
             <button className=' btn btn-primary'>Get Started</button>
           </Link>
         </div>
@@ -160,8 +150,6 @@ const Home = () => {
           <img src={servicepro_2} alt='top_image' />
         </div>
       </section>
-
-      {/* Features-mobile */}
       <section className='middlepage_mobile'>
         <div className='services_items'>
           <h2>Landlords</h2>
@@ -171,7 +159,7 @@ const Home = () => {
           <br />
           <ul class='list-group list-group-flush text-start'>
             <li class='list-group-item p-3'>
-              {' '}
+              {" "}
               <Icon.Check2Square /> Manage Maintenance Request
             </li>
             <li class='list-group-item p-3'>
@@ -197,7 +185,7 @@ const Home = () => {
           </div>
           <ul class='list-group list-group-flush text-start'>
             <li class='list-group-item p-3'>
-              {' '}
+              {" "}
               <Icon.Check2Square /> Online Maintenance Request
             </li>
             <li class='list-group-item p-3'>
@@ -217,7 +205,6 @@ const Home = () => {
           </div>
           <ul class='list-group list-group-flush text-start'>
             <li class='list-group-item p-3'>
-              {' '}
               <Icon.Check2Square /> Communication with Home Ownwers and
               Non-owner Residents
             </li>
@@ -232,7 +219,7 @@ const Home = () => {
               <Icon.Check2Square /> Violation Reports
             </li>
             <li class='list-group-item p-3'>
-              <Icon.Check2Square /> Community Announcements{' '}
+              <Icon.Check2Square /> Community Announcements{" "}
             </li>
           </ul>
         </div>
@@ -245,7 +232,7 @@ const Home = () => {
           </div>
           <ul class='list-group list-group-flush text-start'>
             <li class='list-group-item p-3'>
-              {' '}
+              {" "}
               <Icon.Check2Square /> Manage Invoices
             </li>
             <li class='list-group-item p-3'>
@@ -263,8 +250,6 @@ const Home = () => {
           </ul>
         </div>
       </section>
-
-      {/* Newsletter */}
       <section className='newsletter'>
         <div className='newsletter_content'>
           <h3>Stay Connected</h3>
@@ -275,13 +260,10 @@ const Home = () => {
         </div>
         <div className='newsletter_button'>
           <Link to='/signup'>
-            {' '}
             <button className=' btn btn-lg bg-white'>Sign up</button>
           </Link>
         </div>
       </section>
-
-      {/* How it works */}
       <div className='howitworks-container'>
         <div className='howitworks-header'>
           <h2>How It Works</h2>
@@ -291,7 +273,7 @@ const Home = () => {
             <span>
               <span
                 className='fas fa-plus-circle fa-2x'
-                style={{ color: '#185adb' }}
+                style={{ color: "#185adb" }}
               ></span>
               <br />
             </span>
@@ -301,20 +283,20 @@ const Home = () => {
           <div className='howitworks_content'>
             <i
               class='fas fa-envelope-open fa-2x'
-              style={{ color: '#185adb' }}
+              style={{ color: "#185adb" }}
             ></i>
             <br />
             <h3>Verify Your Email</h3>
             <p>Check your email for the verification link.</p>
           </div>
           <div className='howitworks_content'>
-            <i className='fas fa-home fa-2x' style={{ color: '#185adb' }}></i>
+            <i className='fas fa-home fa-2x' style={{ color: "#185adb" }}></i>
             <br />
             <h3>Add Property</h3>
             <p>Landlord adds the details of his property.</p>
           </div>
           <div className='howitworks_content'>
-            <i className='fas fa-users fa-2x' style={{ color: '#185adb' }}></i>
+            <i className='fas fa-users fa-2x' style={{ color: "#185adb" }}></i>
             <br />
             <h3>Add Tenants</h3>
             <p>Landlord adds tenants details to each property</p>

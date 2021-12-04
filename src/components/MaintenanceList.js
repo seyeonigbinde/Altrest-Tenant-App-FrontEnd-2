@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import { axiosWithAuth } from '../utils/axiosWithAuth'
-import { useHistory } from 'react-router-dom'
+import React, { useEffect, useState } from "react"
+import { axiosWithAuth } from "../utils/axiosWithAuth"
+import { useHistory } from "react-router-dom"
 
 const MaintenanceList = () => {
   const [maintenance, setMaintenance] = useState([])
@@ -9,7 +9,7 @@ const MaintenanceList = () => {
 
   useEffect(() => {
     axiosWithAuth()
-      .get('/maintenance')
+      .get("/maintenance")
       .then((res) => {
         setMaintenance(res.data)
       })
@@ -23,18 +23,13 @@ const MaintenanceList = () => {
       .delete(`/maintenance`)
       .then((res) => {
         setMaintenance(res.data)
-        push('/dashboard')
+        push("/dashboard")
         console.log(res.data)
       })
       .catch((err) => {
         console.log(err)
       })
   }
-
-  // const deleteConfirm = (e) => {
-  // 	e.preventDefault();
-  // 	setDelRequest(true);
-  // }
 
   return (
     <>
@@ -49,13 +44,9 @@ const MaintenanceList = () => {
                 <p>
                   <b>{maintain.urgency}</b>
                 </p>
-                {/* <img src={maintain.image}/> */}
                 <button className='btn btn-danger' onClick={handleDeleteClick}>
                   Completed
                 </button>
-                {/* <button onClick={handleClick} className="clear-btn">
-                        Clear Completed
-                        </button> */}
               </div>
             )
           })}

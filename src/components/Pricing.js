@@ -1,9 +1,9 @@
-import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
-import { Switch, Route, NavLink } from 'react-router-dom'
-import PricingMonthly from './PricingMonthly'
-import PricingYearly from './PricingYearly'
+import React from "react"
+import Footer from "./Footer"
+import Header from "./Header"
+import { Switch, Route, NavLink } from "react-router-dom"
+import PricingMonthly from "./PricingMonthly"
+import PricingYearly from "./PricingYearly"
 
 const Pricing = () => {
   return (
@@ -16,33 +16,32 @@ const Pricing = () => {
           <h5>
             <NavLink
               activeStyle={{
-                borderBottom: '4px solid ##F4D03F',
-                color: '#fff',
-                textDecoration: 'none',
-                fontSize: '1.2rem',
-                backgroundColor: '#185adb',
-                borderRadius: '5px',
-                padding: '1%',
+                borderBottom: "4px solid ##F4D03F",
+                color: "#fff",
+                textDecoration: "none",
+                fontSize: "1.2rem",
+                backgroundColor: "#185adb",
+                borderRadius: "5px",
+                padding: "1%",
               }}
               to='/pricing/pricing_monthly'
             >
-              Monthly{' '}
+              Monthly
             </NavLink>
             ||
             <NavLink
               activeStyle={{
-                borderBottom: '4px solid ##F4D03F',
-                color: '#fff',
-                textDecoration: 'none',
-                fontSize: '1.2rem',
-                backgroundColor: '#185adb',
-                borderRadius: '5px',
-                padding: '1%',
+                borderBottom: "4px solid ##F4D03F",
+                color: "#fff",
+                textDecoration: "none",
+                fontSize: "1.2rem",
+                backgroundColor: "#185adb",
+                borderRadius: "5px",
+                padding: "1%",
               }}
               to='/pricing/pricing_yearly'
             >
-              {' '}
-              Yearly{' '}
+              Yearly
             </NavLink>
           </h5>
           <br />

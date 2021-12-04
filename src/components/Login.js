@@ -1,12 +1,12 @@
-import axios from 'axios'
-import React, { useState } from 'react'
-import { useHistory, Link } from 'react-router-dom'
+import axios from "axios"
+import React, { useState } from "react"
+import { useHistory, Link } from "react-router-dom"
 
-import altrestlogo2 from '../images/altrestlogo2.png'
+import altrestlogo2 from "../images/altrestlogo2.png"
 
 const credentials = {
-  email: '',
-  password: '',
+  email: "",
+  password: "",
 }
 const Login = () => {
   const { push } = useHistory()
@@ -27,10 +27,10 @@ const Login = () => {
       password: userLogin.password.trim(),
     }
     axios
-      .post('https://altrest-app.herokuapp.com/api/auth/login', newUser)
+      .post("https://altrest-app.herokuapp.com/api/auth/login", newUser)
       .then((res) => {
-        localStorage.setItem('token', res.data.token)
-        push('/dashboard')
+        localStorage.setItem("token", res.data.token)
+        push("/dashboard")
         console.log(res)
       })
       .catch((err) => {
@@ -38,7 +38,7 @@ const Login = () => {
       })
   }
 
-  const error = ''
+  const error = ""
 
   return (
     <section>
@@ -53,7 +53,6 @@ const Login = () => {
         <div data-testid='loginForm' className='login-form'>
           <h1>Login</h1>
           <br />
-
           <form onSubmit={login}>
             <div className='form-group form-label mt-3'>
               <label htmlFor='email'>Email Address: </label>
@@ -87,7 +86,7 @@ const Login = () => {
         </p>
       </div>
       <p className='signup_login'>
-        {' '}
+        {" "}
         Don't have an account? <Link to='/signup'>Register</Link>
       </p>
     </section>

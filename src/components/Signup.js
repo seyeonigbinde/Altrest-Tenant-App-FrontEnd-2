@@ -1,30 +1,30 @@
-import React, { useState, useEffect } from 'react'
-import { useHistory, Link } from 'react-router-dom'
-import * as yup from 'yup'
-import formSchema from '../utils/formSchema'
-import axios from 'axios'
+import React, { useState, useEffect } from "react"
+import { useHistory, Link } from "react-router-dom"
+import * as yup from "yup"
+import formSchema from "../utils/formSchema"
+import axios from "axios"
 
-import altrestlogo2 from '../images/altrestlogo2.png'
-import Footer from './Footer'
+import altrestlogo2 from "../images/altrestlogo2.png"
+import Footer from "./Footer"
 
 const initialFormValues = {
-  firstName: '',
-  lastName: '',
-  email: '',
-  phone: '',
-  address: '',
-  location: '',
-  password: '',
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  address: "",
+  location: "",
+  password: "",
 }
 
 const initialFormErrors = {
-  firstName: '',
-  lastName: '',
-  email: '',
-  phone: '',
-  address: '',
-  location: '',
-  password: '',
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  address: "",
+  location: "",
+  password: "",
 }
 
 const Signup = () => {
@@ -39,7 +39,7 @@ const Signup = () => {
       .reach(formSchema, e.target.name)
       .validate(e.target.value)
       .then(() => {
-        setFormErrors({ ...formErrors, [e.target.name]: '' })
+        setFormErrors({ ...formErrors, [e.target.name]: "" })
       })
       .catch((err) => {
         setFormErrors({ ...formErrors, [e.target.name]: err.errors[0] })
@@ -70,10 +70,10 @@ const Signup = () => {
     }
 
     axios
-      .post('https://altrest-app.herokuapp.com/api/auth/register', newUser)
+      .post("https://altrest-app.herokuapp.com/api/auth/register", newUser)
       .then((res) => {
         console.log(res)
-        push('/login')
+        push("/login")
       })
       .catch((err) => {
         console.log(err)
@@ -214,7 +214,6 @@ const Signup = () => {
               placeholder='Password'
             />
             <p className='errors'>{formErrors.password}</p>
-            {/* <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> */}
           </div>
           <div>
             <input
@@ -227,14 +226,10 @@ const Signup = () => {
             privacy policy.
           </div>
           <br />
-          {/* {
-                props.error && <div data-testid="errorAlert" className="alert alert-danger" role="alert">Error: {props.error}</div>
-            } */}
           <button disabled={disabled}>Create Account</button>
         </form>
         <br />
         <p className='signup_login'>
-          {' '}
           Already have an account? <Link to='/login'>Login</Link>
         </p>
       </section>
