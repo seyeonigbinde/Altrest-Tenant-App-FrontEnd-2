@@ -263,12 +263,12 @@ nav {
   width: 100%;
 }
 .features_container {
-  width: 60%;
+  width: 90%;
   /* box-shadow: 6px 4px 10px #185adb; */
   border-radius: 10px;
   padding: 2% 2.5%;
   margin-bottom: 8%;
-  line-height: 1.5;
+  line-height: 2;
 }
 .features_container h3 {
   color: #185adb;
